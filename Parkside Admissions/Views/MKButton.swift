@@ -90,7 +90,7 @@ public class MKButton : UIButton
         cornerRadius = 2.5
         mkLayer.setBackgroundLayerColor(backgroundLayerColor)
         mkLayer.setCircleLayerColor(rippleLayerColor)
-        let radius:CGFloat = 2.0
+        let radius:CGFloat = 8.0
         layer.cornerRadius = radius
         let shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: radius)
         

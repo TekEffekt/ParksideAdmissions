@@ -27,41 +27,27 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
     {
         self.automaticallyAdjustsScrollViewInsets = false
     }
-    
-    func setupButtons()
-    {
-//        for var i = 0; i < self.majorButtonContainer.count; i++
-//        {
-//            var container = self.majorButtonContainer[i]
-//            let button = MKButton(frame: container.frame)
-//            button.backgroundColor = UIColor.MKColor.Cyan
-//            button.center = container.center
-//            button.setTitle("Computer Science", forState: UIControlState.Normal)
-//            self.view.addSubview(button)
-//        }
-        
-        
-    }
 
-    func numberOfSectionsInCollectionView(collectionView:
-        UICollectionView) -> Int {
+    func numberOfSectionsInCollectionView(collectionView:UICollectionView) -> Int {
             return 1
     }
     
-    func collectionView(collectionView: UICollectionView,
-        numberOfItemsInSection section: Int) -> Int
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return Constants.majorNames.count
     }
     
-    func collectionView(collectionView: UICollectionView,
-        cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
         let cell:MajorButtonCell = collectionView.dequeueReusableCellWithReuseIdentifier("majorCell", forIndexPath: indexPath) as! MajorButtonCell
         cell.index = indexPath.row
+        if !self.buttonViews.contains(cell.button)
+        {
+            self.buttonViews.append(cell.button)
+        }
+        cell.setNeedsDisplay()
         
         return cell
     }
-    
     
 }

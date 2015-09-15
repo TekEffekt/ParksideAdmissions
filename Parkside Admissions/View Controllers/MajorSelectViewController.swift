@@ -79,7 +79,10 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         self.view.addSubview(tempButton!)
         self.createTransition(withView: tempButton!)
         
+        let index = cell.index
+        
         let pdfController = self.storyboard!.instantiateViewControllerWithIdentifier("pdfController") as! PDFViewController
+        pdfController.pdfIndex = index
         pdfController.modalPresentationStyle = UIModalPresentationStyle.Custom
         pdfController.transitioningDelegate = self
         pdfController.view.backgroundColor = button.backgroundColor

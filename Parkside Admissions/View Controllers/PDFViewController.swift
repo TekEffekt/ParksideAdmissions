@@ -15,6 +15,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     // MARK: Properties
     var masterController:MajorSelectViewController?
     var displayedPDF = false
+    var pdfIndex:Int?
     
     // MARK: Initialization
     override func viewDidLoad() {
@@ -43,7 +44,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     
     func previewController(controller: QLPreviewController, previewItemAtIndex index: Int) -> QLPreviewItem
     {
-        let path = NSBundle.mainBundle().pathForResource("Computer-Science-APP", ofType: "pdf")
+        let path = NSBundle.mainBundle().pathForResource(Constants.majorPdfFileName[pdfIndex!], ofType: "pdf")
         return NSURL.fileURLWithPath(path!)
     }
     

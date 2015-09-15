@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A57F7220EAA2AEA89FE4736 /* libPods-Parkside Admissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CA56AC0A136B633956753C /* libPods-Parkside Admissions.a */; };
 		B6AD197D1BA631BA00A57472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD197C1BA631BA00A57472 /* AppDelegate.swift */; };
 		B6AD19841BA631BA00A57472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19831BA631BA00A57472 /* Assets.xcassets */; };
 		B6AD19871BA631BA00A57472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19851BA631BA00A57472 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,29 @@
 		B6AD19C81BA635E200A57472 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19C41BA635E200A57472 /* MKButton.swift */; };
 		B6AD19C91BA635E200A57472 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19C51BA635E200A57472 /* MKColor.swift */; };
 		B6AD19CA1BA635E200A57472 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19C61BA635E200A57472 /* MKLayer.swift */; };
+		B6AD19CD1BA6BFEE00A57472 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19CC1BA6BFEE00A57472 /* PDFViewController.swift */; };
+		B6AD19E81BA7DE7F00A57472 /* Applied-Health-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19D21BA7DE7F00A57472 /* Applied-Health-APP.pdf */; };
+		B6AD19E91BA7DE7F00A57472 /* Biology-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19D31BA7DE7F00A57472 /* Biology-APP.pdf */; };
+		B6AD19EA1BA7DE7F00A57472 /* Chemistry-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19D41BA7DE7F00A57472 /* Chemistry-APP.pdf */; };
+		B6AD19EB1BA7DE7F00A57472 /* Communication-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19D51BA7DE7F00A57472 /* Communication-APP.pdf */; };
+		B6AD19EC1BA7DE7F00A57472 /* Computer-Science-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19D61BA7DE7F00A57472 /* Computer-Science-APP.pdf */; };
+		B6AD19ED1BA7DE7F00A57472 /* Criminal-Justice-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19D71BA7DE7F00A57472 /* Criminal-Justice-APP.pdf */; };
+		B6AD19EE1BA7DE7F00A57472 /* Engineering-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19D81BA7DE7F00A57472 /* Engineering-APP.pdf */; };
+		B6AD19EF1BA7DE7F00A57472 /* Environmental-Studies-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19D91BA7DE7F00A57472 /* Environmental-Studies-APP.pdf */; };
+		B6AD19F01BA7DE7F00A57472 /* Geosciences-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19DA1BA7DE7F00A57472 /* Geosciences-APP.pdf */; };
+		B6AD19F11BA7DE7F00A57472 /* HIMT-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19DB1BA7DE7F00A57472 /* HIMT-APP.pdf */; };
+		B6AD19F21BA7DE7F00A57472 /* History-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19DC1BA7DE7F00A57472 /* History-APP.pdf */; };
+		B6AD19F31BA7DE7F00A57472 /* International-Studies-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19DD1BA7DE7F00A57472 /* International-Studies-APP.pdf */; };
+		B6AD19F41BA7DE7F00A57472 /* Mathematics-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19DE1BA7DE7F00A57472 /* Mathematics-APP.pdf */; };
+		B6AD19F51BA7DE7F00A57472 /* Music-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19DF1BA7DE7F00A57472 /* Music-APP.pdf */; };
+		B6AD19F61BA7DE7F00A57472 /* Nursing-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E01BA7DE7F00A57472 /* Nursing-APP.pdf */; };
+		B6AD19F71BA7DE7F00A57472 /* Physics-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E11BA7DE7F00A57472 /* Physics-APP.pdf */; };
+		B6AD19F81BA7DE7F00A57472 /* PoliSciLaw-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E21BA7DE7F00A57472 /* PoliSciLaw-APP.pdf */; };
+		B6AD19F91BA7DE7F00A57472 /* Pre-Health-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E31BA7DE7F00A57472 /* Pre-Health-APP.pdf */; };
+		B6AD19FA1BA7DE7F00A57472 /* Psychology-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E41BA7DE7F00A57472 /* Psychology-APP.pdf */; };
+		B6AD19FB1BA7DE7F00A57472 /* Sport-Management-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E51BA7DE7F00A57472 /* Sport-Management-APP.pdf */; };
+		B6AD19FC1BA7DE7F00A57472 /* Sustainable-Management-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E61BA7DE7F00A57472 /* Sustainable-Management-APP.pdf */; };
+		B6AD19FD1BA7DE7F00A57472 /* Theatre-Arts-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E71BA7DE7F00A57472 /* Theatre-Arts-APP.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42A87BBBF94E3F22E1B54C0D /* Pods-Parkside Admissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkside Admissions.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parkside Admissions/Pods-Parkside Admissions.release.xcconfig"; sourceTree = "<group>"; };
+		77CA56AC0A136B633956753C /* libPods-Parkside Admissions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parkside Admissions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AD19791BA631BA00A57472 /* Parkside Admissions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parkside Admissions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AD197C1BA631BA00A57472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6AD19831BA631BA00A57472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +85,31 @@
 		B6AD19C41BA635E200A57472 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Views/MKButton.swift; sourceTree = "<group>"; };
 		B6AD19C51BA635E200A57472 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Views/MKColor.swift; sourceTree = "<group>"; };
 		B6AD19C61BA635E200A57472 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Views/MKLayer.swift; sourceTree = "<group>"; };
+		B6AD19CC1BA6BFEE00A57472 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFViewController.swift; path = "View Controllers/PDFViewController.swift"; sourceTree = "<group>"; };
+		B6AD19CF1BA6C0A500A57472 /* Parkside Admissions-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Parkside Admissions-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6AD19D21BA7DE7F00A57472 /* Applied-Health-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Applied-Health-APP.pdf"; path = "PDFs/Applied-Health-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19D31BA7DE7F00A57472 /* Biology-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Biology-APP.pdf"; path = "PDFs/Biology-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19D41BA7DE7F00A57472 /* Chemistry-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Chemistry-APP.pdf"; path = "PDFs/Chemistry-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19D51BA7DE7F00A57472 /* Communication-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Communication-APP.pdf"; path = "PDFs/Communication-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19D61BA7DE7F00A57472 /* Computer-Science-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Computer-Science-APP.pdf"; path = "PDFs/Computer-Science-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19D71BA7DE7F00A57472 /* Criminal-Justice-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Criminal-Justice-APP.pdf"; path = "PDFs/Criminal-Justice-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19D81BA7DE7F00A57472 /* Engineering-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Engineering-APP.pdf"; path = "PDFs/Engineering-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19D91BA7DE7F00A57472 /* Environmental-Studies-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Environmental-Studies-APP.pdf"; path = "PDFs/Environmental-Studies-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19DA1BA7DE7F00A57472 /* Geosciences-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Geosciences-APP.pdf"; path = "PDFs/Geosciences-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19DB1BA7DE7F00A57472 /* HIMT-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "HIMT-APP.pdf"; path = "PDFs/HIMT-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19DC1BA7DE7F00A57472 /* History-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "History-APP.pdf"; path = "PDFs/History-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19DD1BA7DE7F00A57472 /* International-Studies-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "International-Studies-APP.pdf"; path = "PDFs/International-Studies-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19DE1BA7DE7F00A57472 /* Mathematics-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Mathematics-APP.pdf"; path = "PDFs/Mathematics-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19DF1BA7DE7F00A57472 /* Music-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Music-APP.pdf"; path = "PDFs/Music-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19E01BA7DE7F00A57472 /* Nursing-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Nursing-APP.pdf"; path = "PDFs/Nursing-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19E11BA7DE7F00A57472 /* Physics-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Physics-APP.pdf"; path = "PDFs/Physics-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19E21BA7DE7F00A57472 /* PoliSciLaw-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "PoliSciLaw-APP.pdf"; path = "PDFs/PoliSciLaw-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19E31BA7DE7F00A57472 /* Pre-Health-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Pre-Health-APP.pdf"; path = "PDFs/Pre-Health-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19E41BA7DE7F00A57472 /* Psychology-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Psychology-APP.pdf"; path = "PDFs/Psychology-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19E51BA7DE7F00A57472 /* Sport-Management-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Sport-Management-APP.pdf"; path = "PDFs/Sport-Management-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19E61BA7DE7F00A57472 /* Sustainable-Management-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Sustainable-Management-APP.pdf"; path = "PDFs/Sustainable-Management-APP.pdf"; sourceTree = "<group>"; };
+		B6AD19E71BA7DE7F00A57472 /* Theatre-Arts-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Theatre-Arts-APP.pdf"; path = "PDFs/Theatre-Arts-APP.pdf"; sourceTree = "<group>"; };
+		DF4E7387D88C394FE40007FB /* Pods-Parkside Admissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkside Admissions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parkside Admissions/Pods-Parkside Admissions.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A57F7220EAA2AEA89FE4736 /* libPods-Parkside Admissions.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +138,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831CEA3A3C8E11D07CCF786A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF4E7387D88C394FE40007FB /* Pods-Parkside Admissions.debug.xcconfig */,
+				42A87BBBF94E3F22E1B54C0D /* Pods-Parkside Admissions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C8DEE97E5B7D735E3ADABF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77CA56AC0A136B633956753C /* libPods-Parkside Admissions.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6AD19701BA631BA00A57472 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +162,8 @@
 				B6AD19901BA631BA00A57472 /* Parkside AdmissionsTests */,
 				B6AD199B1BA631BA00A57472 /* Parkside AdmissionsUITests */,
 				B6AD197A1BA631BA00A57472 /* Products */,
+				831CEA3A3C8E11D07CCF786A /* Pods */,
+				8C8DEE97E5B7D735E3ADABF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				B6AD197C1BA631BA00A57472 /* AppDelegate.swift */,
+				B6AD19CF1BA6C0A500A57472 /* Parkside Admissions-Bridging-Header.h */,
+				B6AD19FE1BA7DE8500A57472 /* PDFs */,
 				B6AD19C21BA635D200A57472 /* Views */,
 				B6AD19BC1BA635AB00A57472 /* Model */,
 				B6AD19BD1BA635BC00A57472 /* View Controllers */,
@@ -151,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				B6AD19BE1BA635CA00A57472 /* MajorSelectViewController.swift */,
+				B6AD19CC1BA6BFEE00A57472 /* PDFViewController.swift */,
 				B6AD19BF1BA635CA00A57472 /* PagesController.swift */,
 			);
 			name = "View Controllers";
@@ -167,6 +241,35 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		B6AD19FE1BA7DE8500A57472 /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				B6AD19D21BA7DE7F00A57472 /* Applied-Health-APP.pdf */,
+				B6AD19D31BA7DE7F00A57472 /* Biology-APP.pdf */,
+				B6AD19D41BA7DE7F00A57472 /* Chemistry-APP.pdf */,
+				B6AD19D51BA7DE7F00A57472 /* Communication-APP.pdf */,
+				B6AD19D61BA7DE7F00A57472 /* Computer-Science-APP.pdf */,
+				B6AD19D71BA7DE7F00A57472 /* Criminal-Justice-APP.pdf */,
+				B6AD19D81BA7DE7F00A57472 /* Engineering-APP.pdf */,
+				B6AD19D91BA7DE7F00A57472 /* Environmental-Studies-APP.pdf */,
+				B6AD19DA1BA7DE7F00A57472 /* Geosciences-APP.pdf */,
+				B6AD19DB1BA7DE7F00A57472 /* HIMT-APP.pdf */,
+				B6AD19DC1BA7DE7F00A57472 /* History-APP.pdf */,
+				B6AD19DD1BA7DE7F00A57472 /* International-Studies-APP.pdf */,
+				B6AD19DE1BA7DE7F00A57472 /* Mathematics-APP.pdf */,
+				B6AD19DF1BA7DE7F00A57472 /* Music-APP.pdf */,
+				B6AD19E01BA7DE7F00A57472 /* Nursing-APP.pdf */,
+				B6AD19E11BA7DE7F00A57472 /* Physics-APP.pdf */,
+				B6AD19E21BA7DE7F00A57472 /* PoliSciLaw-APP.pdf */,
+				B6AD19E31BA7DE7F00A57472 /* Pre-Health-APP.pdf */,
+				B6AD19E41BA7DE7F00A57472 /* Psychology-APP.pdf */,
+				B6AD19E51BA7DE7F00A57472 /* Sport-Management-APP.pdf */,
+				B6AD19E61BA7DE7F00A57472 /* Sustainable-Management-APP.pdf */,
+				B6AD19E71BA7DE7F00A57472 /* Theatre-Arts-APP.pdf */,
+			);
+			name = PDFs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6AD19A11BA631BA00A57472 /* Build configuration list for PBXNativeTarget "Parkside Admissions" */;
 			buildPhases = (
+				97815966876966C05D432CB2 /* Check Pods Manifest.lock */,
 				B6AD19751BA631BA00A57472 /* Sources */,
 				B6AD19761BA631BA00A57472 /* Frameworks */,
 				B6AD19771BA631BA00A57472 /* Resources */,
+				4522754F09E42659978001CA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +334,7 @@
 		B6AD19711BA631BA00A57472 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "University Of Wisconsin Parkside";
 				TargetAttributes = {
@@ -270,9 +376,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AD19E91BA7DE7F00A57472 /* Biology-APP.pdf in Resources */,
+				B6AD19EA1BA7DE7F00A57472 /* Chemistry-APP.pdf in Resources */,
+				B6AD19F31BA7DE7F00A57472 /* International-Studies-APP.pdf in Resources */,
+				B6AD19ED1BA7DE7F00A57472 /* Criminal-Justice-APP.pdf in Resources */,
+				B6AD19F51BA7DE7F00A57472 /* Music-APP.pdf in Resources */,
+				B6AD19F61BA7DE7F00A57472 /* Nursing-APP.pdf in Resources */,
+				B6AD19F21BA7DE7F00A57472 /* History-APP.pdf in Resources */,
+				B6AD19EB1BA7DE7F00A57472 /* Communication-APP.pdf in Resources */,
 				B6AD19B91BA631E500A57472 /* Main.storyboard in Resources */,
+				B6AD19FC1BA7DE7F00A57472 /* Sustainable-Management-APP.pdf in Resources */,
+				B6AD19F01BA7DE7F00A57472 /* Geosciences-APP.pdf in Resources */,
+				B6AD19EF1BA7DE7F00A57472 /* Environmental-Studies-APP.pdf in Resources */,
+				B6AD19F81BA7DE7F00A57472 /* PoliSciLaw-APP.pdf in Resources */,
+				B6AD19FB1BA7DE7F00A57472 /* Sport-Management-APP.pdf in Resources */,
+				B6AD19F41BA7DE7F00A57472 /* Mathematics-APP.pdf in Resources */,
+				B6AD19EC1BA7DE7F00A57472 /* Computer-Science-APP.pdf in Resources */,
+				B6AD19F71BA7DE7F00A57472 /* Physics-APP.pdf in Resources */,
+				B6AD19FD1BA7DE7F00A57472 /* Theatre-Arts-APP.pdf in Resources */,
 				B6AD19871BA631BA00A57472 /* LaunchScreen.storyboard in Resources */,
+				B6AD19E81BA7DE7F00A57472 /* Applied-Health-APP.pdf in Resources */,
+				B6AD19F11BA7DE7F00A57472 /* HIMT-APP.pdf in Resources */,
+				B6AD19EE1BA7DE7F00A57472 /* Engineering-APP.pdf in Resources */,
+				B6AD19FA1BA7DE7F00A57472 /* Psychology-APP.pdf in Resources */,
 				B6AD19841BA631BA00A57472 /* Assets.xcassets in Resources */,
+				B6AD19F91BA7DE7F00A57472 /* Pre-Health-APP.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,11 +420,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4522754F09E42659978001CA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parkside Admissions/Pods-Parkside Admissions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97815966876966C05D432CB2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6AD19751BA631BA00A57472 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AD19CD1BA6BFEE00A57472 /* PDFViewController.swift in Sources */,
 				B6AD19C11BA635CA00A57472 /* PagesController.swift in Sources */,
 				B6AD19C71BA635E200A57472 /* MajorButtonCell.swift in Sources */,
 				B6AD197D1BA631BA00A57472 /* AppDelegate.swift in Sources */,
@@ -436,25 +598,34 @@
 		};
 		B6AD19A21BA631BA00A57472 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF4E7387D88C394FE40007FB /* Pods-Parkside Admissions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Parkside Admissions/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uwp.Parkside-Admissions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Parkside Admissions/Parkside Admissions-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B6AD19A31BA631BA00A57472 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A87BBBF94E3F22E1B54C0D /* Pods-Parkside Admissions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Parkside Admissions/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uwp.Parkside-Admissions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Parkside Admissions/Parkside Admissions-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -525,6 +696,7 @@
 				B6AD19A31BA631BA00A57472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6AD19A41BA631BA00A57472 /* Build configuration list for PBXNativeTarget "Parkside AdmissionsTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +705,7 @@
 				B6AD19A61BA631BA00A57472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6AD19A71BA631BA00A57472 /* Build configuration list for PBXNativeTarget "Parkside AdmissionsUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +714,7 @@
 				B6AD19A91BA631BA00A57472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -66,6 +66,24 @@
             </objects>
             <point key="canvasLocation" x="1192" y="337"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="NmR-0x-LjM">
+            <objects>
+                <viewController storyboardIdentifier="pdfController" id="qde-Pc-v6z" customClass="PDFViewController" customModule="Parkside_Admissions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uLZ-xP-jrt"/>
+                        <viewControllerLayoutGuide type="bottom" id="vDR-0C-hSy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DgZ-0J-e2g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fuo-xK-ocQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="337"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lIN-6c-6y5">
             <objects>

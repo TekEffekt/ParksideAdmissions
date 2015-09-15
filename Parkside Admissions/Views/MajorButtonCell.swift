@@ -12,6 +12,7 @@ class MajorButtonCell: UICollectionViewCell
 {
     var button = MKButton()
     var index:Int?
+    var controller:MajorSelectViewController?
     
     override func drawRect(rect: CGRect)
     {
@@ -36,6 +37,7 @@ class MajorButtonCell: UICollectionViewCell
     func buttonPressed(sender:UIButton)
     {
         print("Pressed at! \(index)")
+        self.controller!.buttonPressed(withCell: self)
     }
     
 }

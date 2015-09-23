@@ -39,6 +39,23 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
             self.tempButton = nil
         }
     }
+    
+    func setupAppFactoryLogo()
+    {
+        let old = UIImage(named: "App Factory Logo")
+    
+        let rect = CGRectMake(0,0,142,50.4)
+        UIGraphicsBeginImageContext( rect.size );
+        old!.drawInRect(rect)
+        let picture1 = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+        let imageData = UIImagePNGRepresentation(picture1);
+        let img = UIImage(data: imageData!)
+        let logo = UIImageView(image: img)
+        
+        self.navigationItem.titleView = logo
+    }
 
     // MARK: Collection View Data Source
     func numberOfSectionsInCollectionView(collectionView:UICollectionView) -> Int {
@@ -55,10 +72,6 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         let cell:MajorButtonCell = collectionView.dequeueReusableCellWithReuseIdentifier("majorCell", forIndexPath: indexPath) as! MajorButtonCell
         cell.index = indexPath.row
         cell.controller = self
-        if !self.buttonViews.contains(cell.button)
-        {
-            self.buttonViews.append(cell.button)
-        }
         cell.setNeedsDisplay()
         
         return cell
@@ -72,20 +85,31 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
     
     func buttonPressed(withCell cell:MajorButtonCell)
     {
-        let button = cell.button
-        self.tempButton = MKButton(frame: CGRect(x: cell.center.x, y: cell.center.y, width: 10, height: 10))
+        self.prepareTransition(withCell: cell);
+        self.presentPdf(withSelectedCell: cell)
+    }
+    
+    func prepareTransition(withCell cell:MajorButtonCell)
+    {
+        let layout = self.buttonCollection.layoutAttributesForItemAtIndexPath(NSIndexPath(forRow: cell.index!, inSection: 0))
+        let cellFrameInSuperview = self.buttonCollection.convertRect(layout!.frame, toView: self.buttonCollection.superview)
+        
+        self.tempButton = MKButton(frame: CGRect(x: cellFrameInSuperview.origin.x + cellFrameInSuperview.size.width/2, y: cellFrameInSuperview.origin.y + cellFrameInSuperview.size.height/2, width: 10, height: 10))
         tempButton!.cornerRadius = 50
-        tempButton!.backgroundColor = button.backgroundColor
+        let randomColorI = cell.index! % Constants.majorColors.count
+        tempButton!.backgroundColor = Constants.majorColors[randomColorI]
         self.view.addSubview(tempButton!)
         self.createTransition(withView: tempButton!)
-        
-        let index = cell.index
-        
+    }
+    
+    func presentPdf(withSelectedCell cell:MajorButtonCell)
+    {
         let pdfController = self.storyboard!.instantiateViewControllerWithIdentifier("pdfController") as! PDFViewController
-        pdfController.pdfIndex = index
+        pdfController.pdfIndex = cell.index
         pdfController.modalPresentationStyle = UIModalPresentationStyle.Custom
         pdfController.transitioningDelegate = self
-        pdfController.view.backgroundColor = button.backgroundColor
+        let randomColorI = cell.index! % Constants.majorColors.count
+        pdfController.view.backgroundColor = Constants.majorColors[randomColorI]
         pdfController.masterController = self
         self.presentViewController(pdfController, animated: true, completion: nil)
     }
@@ -104,4 +128,5 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
     {
         self.tempButton!.removeFromSuperview()
     }
+    
 }

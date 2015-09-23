@@ -100,6 +100,12 @@ public class MKButton : UIButton
         layer.shadowOpacity = 0.5
         layer.shadowPath = shadowPath.CGPath
     }
+    
+    func removeShadowing()
+    {
+        layer.shadowOpacity = 0.0
+        layer.shadowOffset = CGSizeMake(0, 0)
+    }
 
     // MARK - location tracking methods
     override public func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {

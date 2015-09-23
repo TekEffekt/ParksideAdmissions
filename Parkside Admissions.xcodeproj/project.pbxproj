@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A57F7220EAA2AEA89FE4736 /* libPods-Parkside Admissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CA56AC0A136B633956753C /* libPods-Parkside Admissions.a */; };
+		B602199F1BAEAE5F002D419F /* MyPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B602199E1BAEAE5F002D419F /* MyPreviewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B6AD197D1BA631BA00A57472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD197C1BA631BA00A57472 /* AppDelegate.swift */; };
 		B6AD19841BA631BA00A57472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19831BA631BA00A57472 /* Assets.xcassets */; };
 		B6AD19871BA631BA00A57472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19851BA631BA00A57472 /* LaunchScreen.storyboard */; };
@@ -16,7 +17,6 @@
 		B6AD19B91BA631E500A57472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19B11BA631E500A57472 /* Main.storyboard */; };
 		B6AD19BB1BA635A700A57472 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19BA1BA635A700A57472 /* Constants.swift */; };
 		B6AD19C01BA635CA00A57472 /* MajorSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19BE1BA635CA00A57472 /* MajorSelectViewController.swift */; };
-		B6AD19C11BA635CA00A57472 /* PagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19BF1BA635CA00A57472 /* PagesController.swift */; };
 		B6AD19C71BA635E200A57472 /* MajorButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19C31BA635E200A57472 /* MajorButtonCell.swift */; };
 		B6AD19C81BA635E200A57472 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19C41BA635E200A57472 /* MKButton.swift */; };
 		B6AD19C91BA635E200A57472 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AD19C51BA635E200A57472 /* MKColor.swift */; };
@@ -44,6 +44,9 @@
 		B6AD19FB1BA7DE7F00A57472 /* Sport-Management-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E51BA7DE7F00A57472 /* Sport-Management-APP.pdf */; };
 		B6AD19FC1BA7DE7F00A57472 /* Sustainable-Management-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E61BA7DE7F00A57472 /* Sustainable-Management-APP.pdf */; };
 		B6AD19FD1BA7DE7F00A57472 /* Theatre-Arts-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6AD19E71BA7DE7F00A57472 /* Theatre-Arts-APP.pdf */; };
+		B6E148211BB315D900DCFA9C /* Philosophy-APP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B6E148201BB315D800DCFA9C /* Philosophy-APP.pdf */; settings = {ASSET_TAGS = (); }; };
+		B6F47D2E1BAFDEAF003E22F5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F47D2D1BAFDEAF003E22F5 /* CardView.swift */; settings = {ASSET_TAGS = (); }; };
+		B6F47D301BAFDF09003E22F5 /* SendChoicePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F47D2F1BAFDF09003E22F5 /* SendChoicePopup.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,7 @@
 /* Begin PBXFileReference section */
 		42A87BBBF94E3F22E1B54C0D /* Pods-Parkside Admissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkside Admissions.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parkside Admissions/Pods-Parkside Admissions.release.xcconfig"; sourceTree = "<group>"; };
 		77CA56AC0A136B633956753C /* libPods-Parkside Admissions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parkside Admissions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B602199E1BAEAE5F002D419F /* MyPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPreviewController.swift; path = "View Controllers/MyPreviewController.swift"; sourceTree = "<group>"; };
 		B6AD19791BA631BA00A57472 /* Parkside Admissions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parkside Admissions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AD197C1BA631BA00A57472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6AD19831BA631BA00A57472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +84,6 @@
 		B6AD19B11BA631E500A57472 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B6AD19BA1BA635A700A57472 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Model/Constants.swift; sourceTree = "<group>"; };
 		B6AD19BE1BA635CA00A57472 /* MajorSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MajorSelectViewController.swift; path = "View Controllers/MajorSelectViewController.swift"; sourceTree = "<group>"; };
-		B6AD19BF1BA635CA00A57472 /* PagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagesController.swift; path = "View Controllers/PagesController.swift"; sourceTree = "<group>"; };
 		B6AD19C31BA635E200A57472 /* MajorButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MajorButtonCell.swift; path = Views/MajorButtonCell.swift; sourceTree = "<group>"; };
 		B6AD19C41BA635E200A57472 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Views/MKButton.swift; sourceTree = "<group>"; };
 		B6AD19C51BA635E200A57472 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Views/MKColor.swift; sourceTree = "<group>"; };
@@ -109,6 +112,9 @@
 		B6AD19E51BA7DE7F00A57472 /* Sport-Management-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Sport-Management-APP.pdf"; path = "PDFs/Sport-Management-APP.pdf"; sourceTree = "<group>"; };
 		B6AD19E61BA7DE7F00A57472 /* Sustainable-Management-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Sustainable-Management-APP.pdf"; path = "PDFs/Sustainable-Management-APP.pdf"; sourceTree = "<group>"; };
 		B6AD19E71BA7DE7F00A57472 /* Theatre-Arts-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Theatre-Arts-APP.pdf"; path = "PDFs/Theatre-Arts-APP.pdf"; sourceTree = "<group>"; };
+		B6E148201BB315D800DCFA9C /* Philosophy-APP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Philosophy-APP.pdf"; sourceTree = "<group>"; };
+		B6F47D2D1BAFDEAF003E22F5 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B6F47D2F1BAFDF09003E22F5 /* SendChoicePopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendChoicePopup.swift; path = "View Controllers/SendChoicePopup.swift"; sourceTree = "<group>"; };
 		DF4E7387D88C394FE40007FB /* Pods-Parkside Admissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parkside Admissions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parkside Admissions/Pods-Parkside Admissions.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,8 +192,8 @@
 				B6AD19C21BA635D200A57472 /* Views */,
 				B6AD19BC1BA635AB00A57472 /* Model */,
 				B6AD19BD1BA635BC00A57472 /* View Controllers */,
-				B6AD19B11BA631E500A57472 /* Main.storyboard */,
 				B6AD19831BA631BA00A57472 /* Assets.xcassets */,
+				B6AD19B11BA631E500A57472 /* Main.storyboard */,
 				B6AD19851BA631BA00A57472 /* LaunchScreen.storyboard */,
 				B6AD19881BA631BA00A57472 /* Info.plist */,
 			);
@@ -223,9 +229,10 @@
 		B6AD19BD1BA635BC00A57472 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B6F47D2F1BAFDF09003E22F5 /* SendChoicePopup.swift */,
 				B6AD19BE1BA635CA00A57472 /* MajorSelectViewController.swift */,
 				B6AD19CC1BA6BFEE00A57472 /* PDFViewController.swift */,
-				B6AD19BF1BA635CA00A57472 /* PagesController.swift */,
+				B602199E1BAEAE5F002D419F /* MyPreviewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -233,6 +240,7 @@
 		B6AD19C21BA635D200A57472 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B6F47D2D1BAFDEAF003E22F5 /* CardView.swift */,
 				B6AD19C31BA635E200A57472 /* MajorButtonCell.swift */,
 				B6AD19C41BA635E200A57472 /* MKButton.swift */,
 				B6AD19C51BA635E200A57472 /* MKColor.swift */,
@@ -262,6 +270,7 @@
 				B6AD19E11BA7DE7F00A57472 /* Physics-APP.pdf */,
 				B6AD19E21BA7DE7F00A57472 /* PoliSciLaw-APP.pdf */,
 				B6AD19E31BA7DE7F00A57472 /* Pre-Health-APP.pdf */,
+				B6E148201BB315D800DCFA9C /* Philosophy-APP.pdf */,
 				B6AD19E41BA7DE7F00A57472 /* Psychology-APP.pdf */,
 				B6AD19E51BA7DE7F00A57472 /* Sport-Management-APP.pdf */,
 				B6AD19E61BA7DE7F00A57472 /* Sustainable-Management-APP.pdf */,
@@ -397,6 +406,7 @@
 				B6AD19871BA631BA00A57472 /* LaunchScreen.storyboard in Resources */,
 				B6AD19E81BA7DE7F00A57472 /* Applied-Health-APP.pdf in Resources */,
 				B6AD19F11BA7DE7F00A57472 /* HIMT-APP.pdf in Resources */,
+				B6E148211BB315D900DCFA9C /* Philosophy-APP.pdf in Resources */,
 				B6AD19EE1BA7DE7F00A57472 /* Engineering-APP.pdf in Resources */,
 				B6AD19FA1BA7DE7F00A57472 /* Psychology-APP.pdf in Resources */,
 				B6AD19841BA631BA00A57472 /* Assets.xcassets in Resources */,
@@ -459,11 +469,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6AD19CD1BA6BFEE00A57472 /* PDFViewController.swift in Sources */,
-				B6AD19C11BA635CA00A57472 /* PagesController.swift in Sources */,
+				B6F47D301BAFDF09003E22F5 /* SendChoicePopup.swift in Sources */,
 				B6AD19C71BA635E200A57472 /* MajorButtonCell.swift in Sources */,
 				B6AD197D1BA631BA00A57472 /* AppDelegate.swift in Sources */,
 				B6AD19C81BA635E200A57472 /* MKButton.swift in Sources */,
+				B6F47D2E1BAFDEAF003E22F5 /* CardView.swift in Sources */,
 				B6AD19BB1BA635A700A57472 /* Constants.swift in Sources */,
+				B602199F1BAEAE5F002D419F /* MyPreviewController.swift in Sources */,
 				B6AD19CA1BA635E200A57472 /* MKLayer.swift in Sources */,
 				B6AD19C91BA635E200A57472 /* MKColor.swift in Sources */,
 				B6AD19C01BA635CA00A57472 /* MajorSelectViewController.swift in Sources */,
@@ -602,14 +614,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Parkside Admissions/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uwp.Parkside-Admissions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Parkside Admissions/Parkside Admissions-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -619,13 +635,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Parkside Admissions/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.uwp.Parkside-Admissions";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Parkside Admissions/Parkside Admissions-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

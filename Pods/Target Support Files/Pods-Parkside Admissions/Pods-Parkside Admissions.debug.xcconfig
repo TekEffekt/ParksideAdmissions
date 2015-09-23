@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GoogleAnalytics" "${PODS_ROOT}/Headers/Public/JGMethodSwizzler" "${PODS_ROOT}/Headers/Public/JTMaterialTransition" "${PODS_ROOT}/Headers/Public/MZAppearance" "${PODS_ROOT}/Headers/Public/MZFormSheetPresentationController"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/GoogleAnalytics/Libraries"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GoogleAnalytics" -isystem "${PODS_ROOT}/Headers/Public/JGMethodSwizzler" -isystem "${PODS_ROOT}/Headers/Public/JTMaterialTransition" -isystem "${PODS_ROOT}/Headers/Public/MZAppearance" -isystem "${PODS_ROOT}/Headers/Public/MZFormSheetPresentationController"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"GoogleAnalytics" -l"JGMethodSwizzler" -l"JTMaterialTransition" -l"MZAppearance" -l"MZFormSheetPresentationController" -l"sqlite3" -l"z" -framework "CoreData" -framework "Foundation" -framework "QuartzCore" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods

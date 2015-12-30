@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		32682EA9BA9D214BA04AEF97 /* Pods_ParksideAdmissions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DE01A048B1829F5B047595 /* Pods_ParksideAdmissions.framework */; };
+		B60A173F1C346C1D00A5BB81 /* HealthInfoManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */; };
+		B60A17411C346C3700A5BB81 /* AppliedHealthSciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */; };
 		B62E5F961C33CEF200C4D0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E5F951C33CEF200C4D0D1 /* Main.storyboard */; };
 		B62E5F9D1C33CF1A00C4D0D1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5F981C33CF1A00C4D0D1 /* CardView.swift */; };
 		B62E5F9E1C33CF1A00C4D0D1 /* MajorButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5F991C33CF1A00C4D0D1 /* MajorButtonCell.swift */; };
@@ -26,7 +28,6 @@
 		B67DAACE1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DAACD1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.m */; };
 		B67DAAD21C33D59C008D2E7A /* ParksideMajorNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DAAD11C33D59C008D2E7A /* ParksideMajorNames.swift */; };
 		B67DAAEB1C33DAF3008D2E7A /* Accounting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAD31C33DAF3008D2E7A /* Accounting.pdf */; };
-		B67DAAEC1C33DAF3008D2E7A /* AppliedHealthSciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAD41C33DAF3008D2E7A /* AppliedHealthSciences.pdf */; };
 		B67DAAED1C33DAF3008D2E7A /* Biology.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAD51C33DAF3008D2E7A /* Biology.pdf */; };
 		B67DAAEE1C33DAF3008D2E7A /* Chemistry.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAD61C33DAF3008D2E7A /* Chemistry.pdf */; };
 		B67DAAEF1C33DAF3008D2E7A /* Communication.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAD71C33DAF3008D2E7A /* Communication.pdf */; };
@@ -36,7 +37,6 @@
 		B67DAAF31C33DAF3008D2E7A /* English.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAADB1C33DAF3008D2E7A /* English.pdf */; };
 		B67DAAF41C33DAF3008D2E7A /* EnvironmentalStudies.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAADC1C33DAF3008D2E7A /* EnvironmentalStudies.pdf */; };
 		B67DAAF51C33DAF3008D2E7A /* Geosciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAADD1C33DAF3008D2E7A /* Geosciences.pdf */; };
-		B67DAAF61C33DAF3008D2E7A /* HealthInfoManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAADE1C33DAF3008D2E7A /* HealthInfoManagement.pdf */; };
 		B67DAAF71C33DAF3008D2E7A /* History.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAADF1C33DAF3008D2E7A /* History.pdf */; };
 		B67DAAF81C33DAF3008D2E7A /* InternationalStudies.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAE01C33DAF3008D2E7A /* InternationalStudies.pdf */; };
 		B67DAAF91C33DAF3008D2E7A /* Mathematics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAE11C33DAF3008D2E7A /* Mathematics.pdf */; };
@@ -89,6 +89,8 @@
 		162DF1346733902089B1A865 /* Pods-ParksideAdmissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParksideAdmissions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions.debug.xcconfig"; sourceTree = "<group>"; };
 		17DE01A048B1829F5B047595 /* Pods_ParksideAdmissions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParksideAdmissions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BDBD976DFF612BE17A40BF /* Pods-ParksideAdmissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParksideAdmissions.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions.release.xcconfig"; sourceTree = "<group>"; };
+		B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HealthInfoManagement.pdf; sourceTree = "<group>"; };
+		B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AppliedHealthSciences.pdf; sourceTree = "<group>"; };
 		B62E5F951C33CEF200C4D0D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B62E5F981C33CF1A00C4D0D1 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Views/CardView.swift; sourceTree = "<group>"; };
 		B62E5F991C33CF1A00C4D0D1 /* MajorButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MajorButtonCell.swift; path = Views/MajorButtonCell.swift; sourceTree = "<group>"; };
@@ -113,7 +115,6 @@
 		B67DAACF1C33D396008D2E7A /* MZFormSheetPresentationControllerAnimatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationControllerAnimatorProtocol.h; sourceTree = "<group>"; };
 		B67DAAD11C33D59C008D2E7A /* ParksideMajorNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParksideMajorNames.swift; path = Model/ParksideMajorNames.swift; sourceTree = "<group>"; };
 		B67DAAD31C33DAF3008D2E7A /* Accounting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Accounting.pdf; path = PDFs/Accounting.pdf; sourceTree = "<group>"; };
-		B67DAAD41C33DAF3008D2E7A /* AppliedHealthSciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AppliedHealthSciences.pdf; path = PDFs/AppliedHealthSciences.pdf; sourceTree = "<group>"; };
 		B67DAAD51C33DAF3008D2E7A /* Biology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Biology.pdf; path = PDFs/Biology.pdf; sourceTree = "<group>"; };
 		B67DAAD61C33DAF3008D2E7A /* Chemistry.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Chemistry.pdf; path = PDFs/Chemistry.pdf; sourceTree = "<group>"; };
 		B67DAAD71C33DAF3008D2E7A /* Communication.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Communication.pdf; path = PDFs/Communication.pdf; sourceTree = "<group>"; };
@@ -123,7 +124,6 @@
 		B67DAADB1C33DAF3008D2E7A /* English.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = English.pdf; path = PDFs/English.pdf; sourceTree = "<group>"; };
 		B67DAADC1C33DAF3008D2E7A /* EnvironmentalStudies.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EnvironmentalStudies.pdf; path = PDFs/EnvironmentalStudies.pdf; sourceTree = "<group>"; };
 		B67DAADD1C33DAF3008D2E7A /* Geosciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Geosciences.pdf; path = PDFs/Geosciences.pdf; sourceTree = "<group>"; };
-		B67DAADE1C33DAF3008D2E7A /* HealthInfoManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = HealthInfoManagement.pdf; path = PDFs/HealthInfoManagement.pdf; sourceTree = "<group>"; };
 		B67DAADF1C33DAF3008D2E7A /* History.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = History.pdf; path = PDFs/History.pdf; sourceTree = "<group>"; };
 		B67DAAE01C33DAF3008D2E7A /* InternationalStudies.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = InternationalStudies.pdf; path = PDFs/InternationalStudies.pdf; sourceTree = "<group>"; };
 		B67DAAE11C33DAF3008D2E7A /* Mathematics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Mathematics.pdf; path = PDFs/Mathematics.pdf; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				B67DAAD31C33DAF3008D2E7A /* Accounting.pdf */,
-				B67DAAD41C33DAF3008D2E7A /* AppliedHealthSciences.pdf */,
+				B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */,
 				B67DAB031C33DD38008D2E7A /* Art.pdf */,
 				B67DAAD51C33DAF3008D2E7A /* Biology.pdf */,
 				B67DAB051C33DED9008D2E7A /* BuisnessManagement.pdf */,
@@ -258,7 +258,7 @@
 				B67DAB131C33E18B008D2E7A /* Geography.pdf */,
 				B67DAADD1C33DAF3008D2E7A /* Geosciences.pdf */,
 				B67DAB151C33E1A1008D2E7A /* GraphicDesign.pdf */,
-				B67DAADE1C33DAF3008D2E7A /* HealthInfoManagement.pdf */,
+				B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */,
 				B67DAADF1C33DAF3008D2E7A /* History.pdf */,
 				B67DAAE01C33DAF3008D2E7A /* InternationalStudies.pdf */,
 				B67DAB0B1C33DF55008D2E7A /* LiberalStudies.pdf */,
@@ -462,6 +462,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60A173F1C346C1D00A5BB81 /* HealthInfoManagement.pdf in Resources */,
 				B67DAAED1C33DAF3008D2E7A /* Biology.pdf in Resources */,
 				B67DAB141C33E18B008D2E7A /* Geography.pdf in Resources */,
 				B62E5F961C33CEF200C4D0D1 /* Main.storyboard in Resources */,
@@ -475,14 +476,13 @@
 				B67DAAF11C33DAF3008D2E7A /* CriminalJustice.pdf in Resources */,
 				B67DAB0C1C33DF55008D2E7A /* LiberalStudies.pdf in Resources */,
 				B67DAAF71C33DAF3008D2E7A /* History.pdf in Resources */,
+				B60A17411C346C3700A5BB81 /* AppliedHealthSciences.pdf in Resources */,
 				B6F206641C33CD5D000595CD /* LaunchScreen.storyboard in Resources */,
 				B67DAB001C33DAF3008D2E7A /* SportsManagement.pdf in Resources */,
 				B67DAAEE1C33DAF3008D2E7A /* Chemistry.pdf in Resources */,
 				B67DAB181C33E1D0008D2E7A /* Sociology.pdf in Resources */,
 				B67DAB121C33E02D008D2E7A /* ExerciseScience.pdf in Resources */,
 				B67DAAFC1C33DAF3008D2E7A /* Philosophy.pdf in Resources */,
-				B67DAAEC1C33DAF3008D2E7A /* AppliedHealthSciences.pdf in Resources */,
-				B67DAAF61C33DAF3008D2E7A /* HealthInfoManagement.pdf in Resources */,
 				B67DAAFA1C33DAF3008D2E7A /* Music.pdf in Resources */,
 				B67DAAF21C33DAF3008D2E7A /* Engineering.pdf in Resources */,
 				B67DAAF41C33DAF3008D2E7A /* EnvironmentalStudies.pdf in Resources */,

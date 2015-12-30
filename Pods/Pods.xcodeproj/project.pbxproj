@@ -1,0 +1,1290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01581AC232247519E1995FB335B2E596 /* JGMethodSwizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86894A1522466DBB57452A440BCC3BC /* JGMethodSwizzler.framework */; };
+		04A58BEFA0E3CA1CD055E52C87486E61 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC52196D2EC4F489251D0919BDA9F56D /* UIViewController+TargetViewController.m */; };
+		10D151F87C046D12B8A6C296D091D84E /* MZFormSheetPresentationControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A997E1DB594D4A179919D9EEF016BE0 /* MZFormSheetPresentationControllerSegue.m */; };
+		1441DF5CEF59B5BD34DBF6951A5878FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55905C96B165CD88F71980649BF9A52 /* QuartzCore.framework */; };
+		16B0BAF5025891D326607B7CBEB7C7B3 /* MZBlurEffectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C8DEFD8A6CD6299772399E2D277A19 /* MZBlurEffectAdapter.m */; };
+		178923D881A4F9A50A98E78D2804F3DF /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8299CD70ACD1BA2264476B6A08F3CE /* MZAppearance.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1E91C5E3612C4B2A0128A5B17096D7B0 /* Pods-ParksideAdmissions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 281E857B1C21DA04EADB64E78346B60F /* Pods-ParksideAdmissions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		266FC5C4CD23452028094C0C7E2E6DAC /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8886C604C3A615B26E42975ACC90CB /* UIColor_Hex_Swift-dummy.m */; };
+		29776C7CD95BA87E369403AB8E9659C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55905C96B165CD88F71980649BF9A52 /* QuartzCore.framework */; };
+		37B849C168324B23EBC8D9222B37E5CE /* Pods-ParksideAdmissions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 764C01F28B95A033CA3333F7CCB8451D /* Pods-ParksideAdmissions-dummy.m */; };
+		39ADC017CBEF01D90865C30B7FAB4BDC /* JGMethodSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE5B0F824AE49F13CC32F4E6ED0814F /* JGMethodSwizzler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39AE484966EB6B426CB974AAE37E1C75 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD97F3C7E0705BA8B60E98E46ED37B79 /* UIColorExtension.swift */; };
+		3B6F43580D0FF7AD9A1BA20589BCFE45 /* JTMaterialTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B10E4E3376C540993057ACBFB8FA0D /* JTMaterialTransition.m */; };
+		42EF05D82AC192F84C6A143F5C17EC37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23BEB5F7FCE39664D4C1BE83D3DD72 /* Foundation.framework */; };
+		45B193AD4CF8F1C16F96B3FFCF3BF80F /* MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E930C9E1821E3403FC532742AD039627 /* MZAppearance-dummy.m */; };
+		49C533576231F2AA4934B8139B54C473 /* MZAppearance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9169429DE7F10FDEE61BB880C1F474 /* MZAppearance.framework */; };
+		4CF872455B7277CD30D69AF8F67112C5 /* MZBlurEffectAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = D9659D820273E53D620E162A5BBDEFAF /* MZBlurEffectAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		598946A32B99ED65C0EAD549682D7005 /* MZAppearance-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AECE9995997EA6D450AAFF41F4BCFD /* MZAppearance-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59A116312C7C89F07E0FD7786E82F5A9 /* MZFormSheetPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA7406F997434CA2192D20792B3C5DA /* MZFormSheetPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A7E03D974D854B89B0497E93AF2113E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35999FB47D80571D3BD9DFFC5755A000 /* UIKit.framework */; };
+		5DF8363BB578D856663B8BAFC951B191 /* JTMaterialTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4EB4BEE9FD93A7AD3FB9175C1ACAD8 /* JTMaterialTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65709A5761EC67B2411559BE9A6E3AED /* MZFormSheetPresentationControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2087E89A1F565743BE7BF66A15F2795D /* MZFormSheetPresentationControllerSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71D581F4DDAA2C214334A7117BE0B7EC /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0390E37110D48750AE3904FB21F645AA /* NSInvocation+Copy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		72299081E60D17498E7F042F54775BD2 /* MZFormSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B02DF12EF02126852945453DCA9615 /* MZFormSheetPresentationController.m */; };
+		7D7DCD4BC04A5F9C63228A5CACDD03BF /* UIViewController+TargetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3269026386F1902A3654CA561BCC94B8 /* UIViewController+TargetViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		883A81C737C0D1A6F429650D574518C9 /* MZFormSheetPresentationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA723603A63B88107FA1F5D7835954F /* MZFormSheetPresentationController-dummy.m */; };
+		9047011EF6756F441B2A858ED186892D /* MZFormSheetPresentationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE225A2CA91CCD05EAA400E2D2EE760 /* MZFormSheetPresentationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		945CB19F503CBB20531995580CE27E96 /* JTMaterialTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3053FBFD77B1F60AECA304B6845672 /* JTMaterialTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2B66223CE293AE05B9162E1A2EFF69F /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = AF56F34C5C296FDB8AA43BD62089C124 /* MZAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5FCB6B11D83DF90937FA5954F0D8B04 /* JGMethodSwizzler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A063DB03A1797B39C009A2B7D7F2EDB5 /* JGMethodSwizzler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6562F97CC93A7E5C153E1CEF06431A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23BEB5F7FCE39664D4C1BE83D3DD72 /* Foundation.framework */; };
+		B5A9A1FCF61DBF12EBA9E2724A5015A6 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = D28489F59AEE095A9466DD4E0CEEDC1A /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0BD9273C52AD465A37A60F5C0B95B7D /* MZFormSheetPresentationControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6CA22E90CBABE5D1C74D56C0AF5F5E /* MZFormSheetPresentationControllerAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB95A04703C220676B5A9B4BEA4EF608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23BEB5F7FCE39664D4C1BE83D3DD72 /* Foundation.framework */; };
+		CBC0BCF82E88B6FE6F0B1871EC7D96A8 /* JGMethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6AD4C520DFFA64ACDE3C3BA670EBC /* JGMethodSwizzler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4C85A2362DF63F19C2BA257E421466 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23BEB5F7FCE39664D4C1BE83D3DD72 /* Foundation.framework */; };
+		CF8A03B9F4A769005ED047BA1EA2CE91 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B7E22D40CBEE6949BC751FAF50D3A81 /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D32B67F536597ED2DFF63A5A9FD64ED1 /* JGMethodSwizzler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6791DE82410B7E81383F86BF47E735D /* JGMethodSwizzler-dummy.m */; };
+		E0E3A27227C84992B8D7FDBEF919CA25 /* JTMaterialTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1481C4BCEEFDE9CFA16E16BA65337951 /* JTMaterialTransition-dummy.m */; };
+		E30D266B40A753999CC1B03AB057EE3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23BEB5F7FCE39664D4C1BE83D3DD72 /* Foundation.framework */; };
+		E4380A08683A7A428201A9B09AC9DD06 /* MZFormSheetPresentationControllerAnimatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D8ABBAC4091C436D5C5DD42DDC3282D0 /* MZFormSheetPresentationControllerAnimatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4513CC2663BCD1AD01A44076036D39 /* MZFormSheetPresentationControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E7D3C0079FED183E9F31E99C1DD9E /* MZFormSheetPresentationControllerAnimator.m */; };
+		EF9285AFF3EF1A140C354EAD433E79C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC23BEB5F7FCE39664D4C1BE83D3DD72 /* Foundation.framework */; };
+		F02CC27ED4436CDF49DC46CC3D353462 /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D295624A8F30D3B241853EB86561314 /* MZTransition.m */; };
+		F2615F58BFF5A5A590F49853308F56C0 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B61A65A5AF64D8E12A04B3BD5374EE9 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F98E25BDF8CFFC958C59822710491887 /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = 841C4A1891412D7BE147E6890C2E5A22 /* NSInvocation+Copy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD36B0FBC379A633461975F56D3807BD /* MZTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 76FDB7D0419A70C86C83044F7FBB08C3 /* MZTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15281701308D543FD825F797A953A9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5909EBD0F72D9C0AE9725BC886282A9D;
+			remoteInfo = JGMethodSwizzler;
+		};
+		259121DE345764065F4E933E5AC60B22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFABAFE9408FF95CFC8B3C3770D56837;
+			remoteInfo = MZAppearance;
+		};
+		3E4248B92F2D723BC4020E221D8D8204 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5909EBD0F72D9C0AE9725BC886282A9D;
+			remoteInfo = JGMethodSwizzler;
+		};
+		4740507CC864CFBC8FD38C414BFEC0B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFABAFE9408FF95CFC8B3C3770D56837;
+			remoteInfo = MZAppearance;
+		};
+		6E8E8B908AF0418684CA0B7D9743386C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DBCD99409E7622F00ED4D041FF5421;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		D790FCBE47CD41B59627EE9B6656BA44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F619E87BFE638E6588E80CA42CAFB77E;
+			remoteInfo = JTMaterialTransition;
+		};
+		E256B9D3375909F42D26D03B55A340D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540D639ECCD13B6211E7C9E526447327;
+			remoteInfo = MZFormSheetPresentationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B02DF12EF02126852945453DCA9615 /* MZFormSheetPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationController.m; path = MZFormSheetPresentationController/MZFormSheetPresentationController.m; sourceTree = "<group>"; };
+		0390E37110D48750AE3904FB21F645AA /* NSInvocation+Copy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Copy.m"; path = "MZAppearance/NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		0D295624A8F30D3B241853EB86561314 /* MZTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTransition.m; path = MZFormSheetPresentationController/MZTransition.m; sourceTree = "<group>"; };
+		100B38B5D95120064F567DCE4F2FD082 /* MZFormSheetPresentationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MZFormSheetPresentationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1481C4BCEEFDE9CFA16E16BA65337951 /* JTMaterialTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTMaterialTransition-dummy.m"; sourceTree = "<group>"; };
+		1D8299CD70ACD1BA2264476B6A08F3CE /* MZAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZAppearance.m; path = MZAppearance/MZAppearance.m; sourceTree = "<group>"; };
+		1E7C662B728557DFB2271D640B39B339 /* Pods-ParksideAdmissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParksideAdmissions.debug.xcconfig"; sourceTree = "<group>"; };
+		2087E89A1F565743BE7BF66A15F2795D /* MZFormSheetPresentationControllerSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationControllerSegue.h; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerSegue.h; sourceTree = "<group>"; };
+		281E857B1C21DA04EADB64E78346B60F /* Pods-ParksideAdmissions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParksideAdmissions-umbrella.h"; sourceTree = "<group>"; };
+		2A9169429DE7F10FDEE61BB880C1F474 /* MZAppearance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MZAppearance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCDD810E69CE81F3681E19A09ADB7F3 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Headers/Public/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		2E4EB4BEE9FD93A7AD3FB9175C1ACAD8 /* JTMaterialTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTMaterialTransition-umbrella.h"; sourceTree = "<group>"; };
+		306C650C38E7940414C3822B58B6F91E /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Headers/Public/GAI.h; sourceTree = "<group>"; };
+		3269026386F1902A3654CA561BCC94B8 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TargetViewController.h"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
+		35999FB47D80571D3BD9DFFC5755A000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		36C8DEFD8A6CD6299772399E2D277A19 /* MZBlurEffectAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZBlurEffectAdapter.m; path = MZFormSheetPresentationController/MZBlurEffectAdapter.m; sourceTree = "<group>"; };
+		384668D9F7041F07FB560E04FC62D3B7 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Headers/Public/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		41A60CA9AA41256549C074C039D4D8EA /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Headers/Public/GAITrackedViewController.h; sourceTree = "<group>"; };
+		4BDA867D8CC8637A576EE7C0CB0DFACE /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Headers/Public/GAILogger.h; sourceTree = "<group>"; };
+		4C570D972C72A8913F9E02D82A7E710F /* Pods-ParksideAdmissions-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParksideAdmissions-resources.sh"; sourceTree = "<group>"; };
+		4C671D24C85BB606A059E5C4D1434905 /* Pods-ParksideAdmissions-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParksideAdmissions-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DB1412F96668D70F245F8EA8D779152 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		50E03E7E70E93676022C1B343BA249B0 /* MZAppearance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MZAppearance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		543AA497B426B2DAA0E5B963521DCC2B /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = Headers/Public/GAITracker.h; sourceTree = "<group>"; };
+		577FBDF18024C7AB2F3DFFEC16643BE7 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Headers/Public/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		5A997E1DB594D4A179919D9EEF016BE0 /* MZFormSheetPresentationControllerSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationControllerSegue.m; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerSegue.m; sourceTree = "<group>"; };
+		5D3053FBFD77B1F60AECA304B6845672 /* JTMaterialTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JTMaterialTransition.h; path = JTMaterialTransition/JTMaterialTransition.h; sourceTree = "<group>"; };
+		5EA723603A63B88107FA1F5D7835954F /* MZFormSheetPresentationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZFormSheetPresentationController-dummy.m"; sourceTree = "<group>"; };
+		5EE225A2CA91CCD05EAA400E2D2EE760 /* MZFormSheetPresentationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-umbrella.h"; sourceTree = "<group>"; };
+		608A45E29B07A57665BFF3BEC065899D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64163F05265D7FB78EE1E247BA53511C /* Pods-ParksideAdmissions-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParksideAdmissions-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F6CA22E90CBABE5D1C74D56C0AF5F5E /* MZFormSheetPresentationControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationControllerAnimator.h; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerAnimator.h; sourceTree = "<group>"; };
+		755A8EBEAECC1A4FE3E4B36B85A0BCF1 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762E4E60D1329D723A78D1D7BEA13C49 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		764C01F28B95A033CA3333F7CCB8451D /* Pods-ParksideAdmissions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParksideAdmissions-dummy.m"; sourceTree = "<group>"; };
+		76C45E4CD8CFCFF1C23277114BC92981 /* Pods-ParksideAdmissions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParksideAdmissions.modulemap"; sourceTree = "<group>"; };
+		76FDB7D0419A70C86C83044F7FBB08C3 /* MZTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTransition.h; path = MZFormSheetPresentationController/MZTransition.h; sourceTree = "<group>"; };
+		7BAC0FCB952F65FCB9001DD52FF12566 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Headers/Public/GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		7D6155B7152D9BFAF46B400626FEDA35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FFEDAB8DFE34CACABA0585EED88E18B /* Pods-ParksideAdmissions-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParksideAdmissions-frameworks.sh"; sourceTree = "<group>"; };
+		841C4A1891412D7BE147E6890C2E5A22 /* NSInvocation+Copy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Copy.h"; path = "MZAppearance/NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		84B0893F562AE6318500A7ED843E8183 /* MZFormSheetPresentationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MZFormSheetPresentationController.modulemap; sourceTree = "<group>"; };
+		86486FC5DEF030FB6F4ACFF5EB4B4CEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881207B9CE7CBB96E99D9EDEEFA8C4D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7E7D3C0079FED183E9F31E99C1DD9E /* MZFormSheetPresentationControllerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationControllerAnimator.m; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerAnimator.m; sourceTree = "<group>"; };
+		9B61A65A5AF64D8E12A04B3BD5374EE9 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		9B7E22D40CBEE6949BC751FAF50D3A81 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		9D62A5F0E73C4F6151F189FF139F2309 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F654E66F5BB032AC28C82FEB220FA57 /* JTMaterialTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTMaterialTransition.xcconfig; sourceTree = "<group>"; };
+		A063DB03A1797B39C009A2B7D7F2EDB5 /* JGMethodSwizzler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JGMethodSwizzler-umbrella.h"; sourceTree = "<group>"; };
+		A09227DDDC3171F3E07460274CAB5E57 /* MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAppearance.xcconfig; sourceTree = "<group>"; };
+		A0B10E4E3376C540993057ACBFB8FA0D /* JTMaterialTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JTMaterialTransition.m; path = JTMaterialTransition/JTMaterialTransition.m; sourceTree = "<group>"; };
+		A6AECE9995997EA6D450AAFF41F4BCFD /* MZAppearance-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-umbrella.h"; sourceTree = "<group>"; };
+		AD97F3C7E0705BA8B60E98E46ED37B79 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		ADB3FBBA28D731C3935DEF8C3071866A /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Headers/Public/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		AE01DE61BCF8C547B90E158D65C82787 /* JTMaterialTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTMaterialTransition-prefix.pch"; sourceTree = "<group>"; };
+		AF56F34C5C296FDB8AA43BD62089C124 /* MZAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZAppearance.h; path = MZAppearance/MZAppearance.h; sourceTree = "<group>"; };
+		B43246DA684736CB21E4696459BD0908 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		B7E297BC83107DB679F2017FB384D891 /* JTMaterialTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTMaterialTransition.modulemap; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB35A5AC0038B8ABB9A254A25AB50FF5 /* JTMaterialTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTMaterialTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB62296C3B9F3BF1177E3F8C8C924BA5 /* MZFormSheetPresentationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZFormSheetPresentationController.xcconfig; sourceTree = "<group>"; };
+		BCCAEB828BF60635C3865A4B0DFA9858 /* MZAppearance.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MZAppearance.modulemap; sourceTree = "<group>"; };
+		C557B0E896A8C923547711AA3944B8A3 /* JGMethodSwizzler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JGMethodSwizzler-prefix.pch"; sourceTree = "<group>"; };
+		C55905C96B165CD88F71980649BF9A52 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C6B6AD4C520DFFA64ACDE3C3BA670EBC /* JGMethodSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGMethodSwizzler.m; path = JGMethodSwizzler/JGMethodSwizzler.m; sourceTree = "<group>"; };
+		C8223695DD6BE5B00B89AADBCDC80E47 /* JGMethodSwizzler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JGMethodSwizzler.xcconfig; sourceTree = "<group>"; };
+		CC440358DEEA2056E4BF0A68945DFE5F /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Headers/Public/GAIFields.h; sourceTree = "<group>"; };
+		CDA7406F997434CA2192D20792B3C5DA /* MZFormSheetPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationController.h; path = MZFormSheetPresentationController/MZFormSheetPresentationController.h; sourceTree = "<group>"; };
+		D28489F59AEE095A9466DD4E0CEEDC1A /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MZFormSheetPresentationController Swift Example-Bridging-Header.h"; path = "MZFormSheetPresentationController/MZFormSheetPresentationController Swift Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		D674B77ED4CE86C260F070153FB5548F /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		D6791DE82410B7E81383F86BF47E735D /* JGMethodSwizzler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JGMethodSwizzler-dummy.m"; sourceTree = "<group>"; };
+		D8ABBAC4091C436D5C5DD42DDC3282D0 /* MZFormSheetPresentationControllerAnimatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationControllerAnimatorProtocol.h; path = MZFormSheetPresentationController/MZFormSheetPresentationControllerAnimatorProtocol.h; sourceTree = "<group>"; };
+		D9659D820273E53D620E162A5BBDEFAF /* MZBlurEffectAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZBlurEffectAdapter.h; path = MZFormSheetPresentationController/MZBlurEffectAdapter.h; sourceTree = "<group>"; };
+		DB6B7DAE4A462B00B0A06481B4AF36A9 /* JGMethodSwizzler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGMethodSwizzler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD19951C7F70C8D4444E7749CA8725B /* Pods-ParksideAdmissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParksideAdmissions.release.xcconfig"; sourceTree = "<group>"; };
+		DC23BEB5F7FCE39664D4C1BE83D3DD72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DD03B3E8AAE681CCEBB04C46764F4770 /* MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-prefix.pch"; sourceTree = "<group>"; };
+		DD0D9B0A872B7363F8177EFAC34DEB13 /* Pods_ParksideAdmissions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParksideAdmissions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8886C604C3A615B26E42975ACC90CB /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		E709A4A1D4AE50E77281E4756B7F556E /* JGMethodSwizzler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JGMethodSwizzler.modulemap; sourceTree = "<group>"; };
+		E930C9E1821E3403FC532742AD039627 /* MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZAppearance-dummy.m"; sourceTree = "<group>"; };
+		EC52196D2EC4F489251D0919BDA9F56D /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TargetViewController.m"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
+		EEE5B0F824AE49F13CC32F4E6ED0814F /* JGMethodSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGMethodSwizzler.h; path = JGMethodSwizzler/JGMethodSwizzler.h; sourceTree = "<group>"; };
+		F0557929B78F28F136BF23CCB9F9D8A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F86894A1522466DBB57452A440BCC3BC /* JGMethodSwizzler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JGMethodSwizzler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AF1BD0215BA4E855B2EEE5F04B7EC2 /* MZFormSheetPresentationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2133E124EE80E09BAFD4A684EE7262BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9285AFF3EF1A140C354EAD433E79C3 /* Foundation.framework in Frameworks */,
+				1441DF5CEF59B5BD34DBF6951A5878FB /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23D827BB9A3AC6F922A3289011F50882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4C85A2362DF63F19C2BA257E421466 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31FCC62E3B978289B2DB2CE6052BC67B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EF05D82AC192F84C6A143F5C17EC37 /* Foundation.framework in Frameworks */,
+				5A7E03D974D854B89B0497E93AF2113E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB98DBCE74E5D47878D7F802AE50849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30D266B40A753999CC1B03AB057EE3C /* Foundation.framework in Frameworks */,
+				01581AC232247519E1995FB335B2E596 /* JGMethodSwizzler.framework in Frameworks */,
+				49C533576231F2AA4934B8139B54C473 /* MZAppearance.framework in Frameworks */,
+				29776C7CD95BA87E369403AB8E9659C9 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B782443E312C26DF17296F5A4C63BEA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6562F97CC93A7E5C153E1CEF06431A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E90E36E96F630B618DBD7C11159077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB95A04703C220676B5A9B4BEA4EF608 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F9BE3107C897C81E522C2C4F4CF8DA /* MZFormSheetPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				D9659D820273E53D620E162A5BBDEFAF /* MZBlurEffectAdapter.h */,
+				36C8DEFD8A6CD6299772399E2D277A19 /* MZBlurEffectAdapter.m */,
+				CDA7406F997434CA2192D20792B3C5DA /* MZFormSheetPresentationController.h */,
+				02B02DF12EF02126852945453DCA9615 /* MZFormSheetPresentationController.m */,
+				D28489F59AEE095A9466DD4E0CEEDC1A /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */,
+				6F6CA22E90CBABE5D1C74D56C0AF5F5E /* MZFormSheetPresentationControllerAnimator.h */,
+				8E7E7D3C0079FED183E9F31E99C1DD9E /* MZFormSheetPresentationControllerAnimator.m */,
+				D8ABBAC4091C436D5C5DD42DDC3282D0 /* MZFormSheetPresentationControllerAnimatorProtocol.h */,
+				2087E89A1F565743BE7BF66A15F2795D /* MZFormSheetPresentationControllerSegue.h */,
+				5A997E1DB594D4A179919D9EEF016BE0 /* MZFormSheetPresentationControllerSegue.m */,
+				76FDB7D0419A70C86C83044F7FBB08C3 /* MZTransition.h */,
+				0D295624A8F30D3B241853EB86561314 /* MZTransition.m */,
+				3269026386F1902A3654CA561BCC94B8 /* UIViewController+TargetViewController.h */,
+				EC52196D2EC4F489251D0919BDA9F56D /* UIViewController+TargetViewController.m */,
+				2D0B6F765A5E50A010A0AC0B3E1FA0FC /* Support Files */,
+			);
+			path = MZFormSheetPresentationController;
+			sourceTree = "<group>";
+		};
+		0826211426D83869DAB8A0D1FA9E66E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88581D1C7A8DF7D6C8ED424A37DF02A0 /* GoogleAnalytics */,
+				848E2CD425B80109C7E063113F4A9E0B /* JGMethodSwizzler */,
+				596BBA3BBDA9627057CA76AE124F4CA1 /* JTMaterialTransition */,
+				D0F70D7F665548B61A31B7E2FC43910E /* MZAppearance */,
+				00F9BE3107C897C81E522C2C4F4CF8DA /* MZFormSheetPresentationController */,
+				EBB8DB1C79D677EEF3C7B424A0B8932F /* UIColor_Hex_Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1272695BC36399C62AAB6E79FB3829A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D6155B7152D9BFAF46B400626FEDA35 /* Info.plist */,
+				B7E297BC83107DB679F2017FB384D891 /* JTMaterialTransition.modulemap */,
+				9F654E66F5BB032AC28C82FEB220FA57 /* JTMaterialTransition.xcconfig */,
+				1481C4BCEEFDE9CFA16E16BA65337951 /* JTMaterialTransition-dummy.m */,
+				AE01DE61BCF8C547B90E158D65C82787 /* JTMaterialTransition-prefix.pch */,
+				2E4EB4BEE9FD93A7AD3FB9175C1ACAD8 /* JTMaterialTransition-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JTMaterialTransition";
+			sourceTree = "<group>";
+		};
+		2D0B6F765A5E50A010A0AC0B3E1FA0FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				881207B9CE7CBB96E99D9EDEEFA8C4D7 /* Info.plist */,
+				84B0893F562AE6318500A7ED843E8183 /* MZFormSheetPresentationController.modulemap */,
+				BB62296C3B9F3BF1177E3F8C8C924BA5 /* MZFormSheetPresentationController.xcconfig */,
+				5EA723603A63B88107FA1F5D7835954F /* MZFormSheetPresentationController-dummy.m */,
+				F9AF1BD0215BA4E855B2EEE5F04B7EC2 /* MZFormSheetPresentationController-prefix.pch */,
+				5EE225A2CA91CCD05EAA400E2D2EE760 /* MZFormSheetPresentationController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZFormSheetPresentationController";
+			sourceTree = "<group>";
+		};
+		332BCCE5D9A7A4F74316E7A5B676C075 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D62A5F0E73C4F6151F189FF139F2309 /* Info.plist */,
+				B43246DA684736CB21E4696459BD0908 /* UIColor_Hex_Swift.modulemap */,
+				762E4E60D1329D723A78D1D7BEA13C49 /* UIColor_Hex_Swift.xcconfig */,
+				DD8886C604C3A615B26E42975ACC90CB /* UIColor_Hex_Swift-dummy.m */,
+				D674B77ED4CE86C260F070153FB5548F /* UIColor_Hex_Swift-prefix.pch */,
+				9B7E22D40CBEE6949BC751FAF50D3A81 /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+		3924A3E1ABB08567AAE80358E0926885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB1412F96668D70F245F8EA8D779152 /* libGoogleAnalytics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3954E3AA89A223DECAE9A58ACA86306D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F66626B8E67F45FEFE4887023C64A482 /* Pods-ParksideAdmissions */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		596BBA3BBDA9627057CA76AE124F4CA1 /* JTMaterialTransition */ = {
+			isa = PBXGroup;
+			children = (
+				5D3053FBFD77B1F60AECA304B6845672 /* JTMaterialTransition.h */,
+				A0B10E4E3376C540993057ACBFB8FA0D /* JTMaterialTransition.m */,
+				1272695BC36399C62AAB6E79FB3829A6 /* Support Files */,
+			);
+			path = JTMaterialTransition;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				7E5F404C118A5B48DA2DDF969B3826CB /* Frameworks */,
+				0826211426D83869DAB8A0D1FA9E66E0 /* Pods */,
+				E41CA1915E9042E7A06188F4DDA2CFFE /* Products */,
+				3954E3AA89A223DECAE9A58ACA86306D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E5F404C118A5B48DA2DDF969B3826CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F86894A1522466DBB57452A440BCC3BC /* JGMethodSwizzler.framework */,
+				2A9169429DE7F10FDEE61BB880C1F474 /* MZAppearance.framework */,
+				BBA5D47A55E1E1C59F6120499EDB3688 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848E2CD425B80109C7E063113F4A9E0B /* JGMethodSwizzler */ = {
+			isa = PBXGroup;
+			children = (
+				EEE5B0F824AE49F13CC32F4E6ED0814F /* JGMethodSwizzler.h */,
+				C6B6AD4C520DFFA64ACDE3C3BA670EBC /* JGMethodSwizzler.m */,
+				D43795DDEF9B08E4058FCCB8104E7E90 /* Support Files */,
+			);
+			path = JGMethodSwizzler;
+			sourceTree = "<group>";
+		};
+		88581D1C7A8DF7D6C8ED424A37DF02A0 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				306C650C38E7940414C3822B58B6F91E /* GAI.h */,
+				577FBDF18024C7AB2F3DFFEC16643BE7 /* GAIDictionaryBuilder.h */,
+				384668D9F7041F07FB560E04FC62D3B7 /* GAIEcommerceFields.h */,
+				2BCDD810E69CE81F3681E19A09ADB7F3 /* GAIEcommerceProduct.h */,
+				ADB3FBBA28D731C3935DEF8C3071866A /* GAIEcommerceProductAction.h */,
+				7BAC0FCB952F65FCB9001DD52FF12566 /* GAIEcommercePromotion.h */,
+				CC440358DEEA2056E4BF0A68945DFE5F /* GAIFields.h */,
+				4BDA867D8CC8637A576EE7C0CB0DFACE /* GAILogger.h */,
+				41A60CA9AA41256549C074C039D4D8EA /* GAITrackedViewController.h */,
+				543AA497B426B2DAA0E5B963521DCC2B /* GAITracker.h */,
+				3924A3E1ABB08567AAE80358E0926885 /* Frameworks */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		BBA5D47A55E1E1C59F6120499EDB3688 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DC23BEB5F7FCE39664D4C1BE83D3DD72 /* Foundation.framework */,
+				C55905C96B165CD88F71980649BF9A52 /* QuartzCore.framework */,
+				35999FB47D80571D3BD9DFFC5755A000 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D0F70D7F665548B61A31B7E2FC43910E /* MZAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				AF56F34C5C296FDB8AA43BD62089C124 /* MZAppearance.h */,
+				1D8299CD70ACD1BA2264476B6A08F3CE /* MZAppearance.m */,
+				841C4A1891412D7BE147E6890C2E5A22 /* NSInvocation+Copy.h */,
+				0390E37110D48750AE3904FB21F645AA /* NSInvocation+Copy.m */,
+				FB22A503ABB2A8AF72C21FAE8E3EB455 /* Support Files */,
+			);
+			path = MZAppearance;
+			sourceTree = "<group>";
+		};
+		D43795DDEF9B08E4058FCCB8104E7E90 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86486FC5DEF030FB6F4ACFF5EB4B4CEE /* Info.plist */,
+				E709A4A1D4AE50E77281E4756B7F556E /* JGMethodSwizzler.modulemap */,
+				C8223695DD6BE5B00B89AADBCDC80E47 /* JGMethodSwizzler.xcconfig */,
+				D6791DE82410B7E81383F86BF47E735D /* JGMethodSwizzler-dummy.m */,
+				C557B0E896A8C923547711AA3944B8A3 /* JGMethodSwizzler-prefix.pch */,
+				A063DB03A1797B39C009A2B7D7F2EDB5 /* JGMethodSwizzler-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JGMethodSwizzler";
+			sourceTree = "<group>";
+		};
+		E41CA1915E9042E7A06188F4DDA2CFFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6B7DAE4A462B00B0A06481B4AF36A9 /* JGMethodSwizzler.framework */,
+				BB35A5AC0038B8ABB9A254A25AB50FF5 /* JTMaterialTransition.framework */,
+				50E03E7E70E93676022C1B343BA249B0 /* MZAppearance.framework */,
+				100B38B5D95120064F567DCE4F2FD082 /* MZFormSheetPresentationController.framework */,
+				DD0D9B0A872B7363F8177EFAC34DEB13 /* Pods_ParksideAdmissions.framework */,
+				755A8EBEAECC1A4FE3E4B36B85A0BCF1 /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBB8DB1C79D677EEF3C7B424A0B8932F /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				9B61A65A5AF64D8E12A04B3BD5374EE9 /* HEXColor.h */,
+				AD97F3C7E0705BA8B60E98E46ED37B79 /* UIColorExtension.swift */,
+				332BCCE5D9A7A4F74316E7A5B676C075 /* Support Files */,
+			);
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+		F66626B8E67F45FEFE4887023C64A482 /* Pods-ParksideAdmissions */ = {
+			isa = PBXGroup;
+			children = (
+				608A45E29B07A57665BFF3BEC065899D /* Info.plist */,
+				76C45E4CD8CFCFF1C23277114BC92981 /* Pods-ParksideAdmissions.modulemap */,
+				64163F05265D7FB78EE1E247BA53511C /* Pods-ParksideAdmissions-acknowledgements.markdown */,
+				4C671D24C85BB606A059E5C4D1434905 /* Pods-ParksideAdmissions-acknowledgements.plist */,
+				764C01F28B95A033CA3333F7CCB8451D /* Pods-ParksideAdmissions-dummy.m */,
+				7FFEDAB8DFE34CACABA0585EED88E18B /* Pods-ParksideAdmissions-frameworks.sh */,
+				4C570D972C72A8913F9E02D82A7E710F /* Pods-ParksideAdmissions-resources.sh */,
+				281E857B1C21DA04EADB64E78346B60F /* Pods-ParksideAdmissions-umbrella.h */,
+				1E7C662B728557DFB2271D640B39B339 /* Pods-ParksideAdmissions.debug.xcconfig */,
+				DBD19951C7F70C8D4444E7749CA8725B /* Pods-ParksideAdmissions.release.xcconfig */,
+			);
+			name = "Pods-ParksideAdmissions";
+			path = "Target Support Files/Pods-ParksideAdmissions";
+			sourceTree = "<group>";
+		};
+		FB22A503ABB2A8AF72C21FAE8E3EB455 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0557929B78F28F136BF23CCB9F9D8A9 /* Info.plist */,
+				BCCAEB828BF60635C3865A4B0DFA9858 /* MZAppearance.modulemap */,
+				A09227DDDC3171F3E07460274CAB5E57 /* MZAppearance.xcconfig */,
+				E930C9E1821E3403FC532742AD039627 /* MZAppearance-dummy.m */,
+				DD03B3E8AAE681CCEBB04C46764F4770 /* MZAppearance-prefix.pch */,
+				A6AECE9995997EA6D450AAFF41F4BCFD /* MZAppearance-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZAppearance";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2BD0BE1E95CE42157A0EEC1749B22BC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2615F58BFF5A5A590F49853308F56C0 /* HEXColor.h in Headers */,
+				CF8A03B9F4A769005ED047BA1EA2CE91 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AE79E48DDACCD5E9788AD4D1D5CD2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FCB6B11D83DF90937FA5954F0D8B04 /* JGMethodSwizzler-umbrella.h in Headers */,
+				39ADC017CBEF01D90865C30B7FAB4BDC /* JGMethodSwizzler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED7595CB3DDE8E76ED704B5C16FD351 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF872455B7277CD30D69AF8F67112C5 /* MZBlurEffectAdapter.h in Headers */,
+				B5A9A1FCF61DBF12EBA9E2724A5015A6 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h in Headers */,
+				9047011EF6756F441B2A858ED186892D /* MZFormSheetPresentationController-umbrella.h in Headers */,
+				59A116312C7C89F07E0FD7786E82F5A9 /* MZFormSheetPresentationController.h in Headers */,
+				C0BD9273C52AD465A37A60F5C0B95B7D /* MZFormSheetPresentationControllerAnimator.h in Headers */,
+				E4380A08683A7A428201A9B09AC9DD06 /* MZFormSheetPresentationControllerAnimatorProtocol.h in Headers */,
+				65709A5761EC67B2411559BE9A6E3AED /* MZFormSheetPresentationControllerSegue.h in Headers */,
+				FD36B0FBC379A633461975F56D3807BD /* MZTransition.h in Headers */,
+				7D7DCD4BC04A5F9C63228A5CACDD03BF /* UIViewController+TargetViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B411CC6637077AAF39DD68AD5A2CD146 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF8363BB578D856663B8BAFC951B191 /* JTMaterialTransition-umbrella.h in Headers */,
+				945CB19F503CBB20531995580CE27E96 /* JTMaterialTransition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0959BE649924F897BFC9CE5821CAA8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E91C5E3612C4B2A0128A5B17096D7B0 /* Pods-ParksideAdmissions-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D753EF5A1E27343DD6BC61CD838758 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				598946A32B99ED65C0EAD549682D7005 /* MZAppearance-umbrella.h in Headers */,
+				A2B66223CE293AE05B9162E1A2EFF69F /* MZAppearance.h in Headers */,
+				F98E25BDF8CFFC958C59822710491887 /* NSInvocation+Copy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14DBCD99409E7622F00ED4D041FF5421 /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08587589A4CF540F9D2283739C602056 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				B04CB7BF4A82576D22D5B6A907EC8E3A /* Sources */,
+				31FCC62E3B978289B2DB2CE6052BC67B /* Frameworks */,
+				2BD0BE1E95CE42157A0EEC1749B22BC3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = 755A8EBEAECC1A4FE3E4B36B85A0BCF1 /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17C7ECB33F2F2B5D2CC59B666FCDF473 /* Pods-ParksideAdmissions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB57CCB18C20389DCA16B5B6B38ACCE9 /* Build configuration list for PBXNativeTarget "Pods-ParksideAdmissions" */;
+			buildPhases = (
+				C826D335308C7FF787461131C6D45160 /* Sources */,
+				F2E90E36E96F630B618DBD7C11159077 /* Frameworks */,
+				E0959BE649924F897BFC9CE5821CAA8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A74CDA492754031C33B9FBAFAC1D0F8 /* PBXTargetDependency */,
+				1A19C2FE7723F3B763C07612D68A7AA3 /* PBXTargetDependency */,
+				FFCA2630911466DBC6F52DBE83BB0155 /* PBXTargetDependency */,
+				3179A789115EB0D5056890ED126B4636 /* PBXTargetDependency */,
+				37D0BBBE6F815AB6C2F3F42330930FA2 /* PBXTargetDependency */,
+			);
+			name = "Pods-ParksideAdmissions";
+			productName = "Pods-ParksideAdmissions";
+			productReference = DD0D9B0A872B7363F8177EFAC34DEB13 /* Pods_ParksideAdmissions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		540D639ECCD13B6211E7C9E526447327 /* MZFormSheetPresentationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6F49B40E87DD6FD51340A1054B19A76 /* Build configuration list for PBXNativeTarget "MZFormSheetPresentationController" */;
+			buildPhases = (
+				016FB98B759DDAA321421A1DF5C9C157 /* Sources */,
+				4CB98DBCE74E5D47878D7F802AE50849 /* Frameworks */,
+				7ED7595CB3DDE8E76ED704B5C16FD351 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FC1006F1CD9FF0AFA2E014877AAC36C /* PBXTargetDependency */,
+				3F9FB3084CF7FA8B26606EB80591B768 /* PBXTargetDependency */,
+			);
+			name = MZFormSheetPresentationController;
+			productName = MZFormSheetPresentationController;
+			productReference = 100B38B5D95120064F567DCE4F2FD082 /* MZFormSheetPresentationController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5909EBD0F72D9C0AE9725BC886282A9D /* JGMethodSwizzler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F651F6E43652F19E3C381EA0D349FA1 /* Build configuration list for PBXNativeTarget "JGMethodSwizzler" */;
+			buildPhases = (
+				34C8F2A497B6D3D9FCDA01FE19ED9F67 /* Sources */,
+				B782443E312C26DF17296F5A4C63BEA4 /* Frameworks */,
+				54AE79E48DDACCD5E9788AD4D1D5CD2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JGMethodSwizzler;
+			productName = JGMethodSwizzler;
+			productReference = DB6B7DAE4A462B00B0A06481B4AF36A9 /* JGMethodSwizzler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F619E87BFE638E6588E80CA42CAFB77E /* JTMaterialTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFC9BD79868997F0AE003804354EE0D /* Build configuration list for PBXNativeTarget "JTMaterialTransition" */;
+			buildPhases = (
+				B7F490E9A9FFB4FE76FF9E02F9D97127 /* Sources */,
+				23D827BB9A3AC6F922A3289011F50882 /* Frameworks */,
+				B411CC6637077AAF39DD68AD5A2CD146 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTMaterialTransition;
+			productName = JTMaterialTransition;
+			productReference = BB35A5AC0038B8ABB9A254A25AB50FF5 /* JTMaterialTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FFABAFE9408FF95CFC8B3C3770D56837 /* MZAppearance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBC1AC62CDB2CE27FBFC6C22AB3D1BD /* Build configuration list for PBXNativeTarget "MZAppearance" */;
+			buildPhases = (
+				3A2ADCB9A3CB151D7984095DD7520EC2 /* Sources */,
+				2133E124EE80E09BAFD4A684EE7262BC /* Frameworks */,
+				E8D753EF5A1E27343DD6BC61CD838758 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZAppearance;
+			productName = MZAppearance;
+			productReference = 50E03E7E70E93676022C1B343BA249B0 /* MZAppearance.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E41CA1915E9042E7A06188F4DDA2CFFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5909EBD0F72D9C0AE9725BC886282A9D /* JGMethodSwizzler */,
+				F619E87BFE638E6588E80CA42CAFB77E /* JTMaterialTransition */,
+				FFABAFE9408FF95CFC8B3C3770D56837 /* MZAppearance */,
+				540D639ECCD13B6211E7C9E526447327 /* MZFormSheetPresentationController */,
+				17C7ECB33F2F2B5D2CC59B666FCDF473 /* Pods-ParksideAdmissions */,
+				14DBCD99409E7622F00ED4D041FF5421 /* UIColor_Hex_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		016FB98B759DDAA321421A1DF5C9C157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B0BAF5025891D326607B7CBEB7C7B3 /* MZBlurEffectAdapter.m in Sources */,
+				883A81C737C0D1A6F429650D574518C9 /* MZFormSheetPresentationController-dummy.m in Sources */,
+				72299081E60D17498E7F042F54775BD2 /* MZFormSheetPresentationController.m in Sources */,
+				EC4513CC2663BCD1AD01A44076036D39 /* MZFormSheetPresentationControllerAnimator.m in Sources */,
+				10D151F87C046D12B8A6C296D091D84E /* MZFormSheetPresentationControllerSegue.m in Sources */,
+				F02CC27ED4436CDF49DC46CC3D353462 /* MZTransition.m in Sources */,
+				04A58BEFA0E3CA1CD055E52C87486E61 /* UIViewController+TargetViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C8F2A497B6D3D9FCDA01FE19ED9F67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32B67F536597ED2DFF63A5A9FD64ED1 /* JGMethodSwizzler-dummy.m in Sources */,
+				CBC0BCF82E88B6FE6F0B1871EC7D96A8 /* JGMethodSwizzler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A2ADCB9A3CB151D7984095DD7520EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B193AD4CF8F1C16F96B3FFCF3BF80F /* MZAppearance-dummy.m in Sources */,
+				178923D881A4F9A50A98E78D2804F3DF /* MZAppearance.m in Sources */,
+				71D581F4DDAA2C214334A7117BE0B7EC /* NSInvocation+Copy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04CB7BF4A82576D22D5B6A907EC8E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266FC5C4CD23452028094C0C7E2E6DAC /* UIColor_Hex_Swift-dummy.m in Sources */,
+				39AE484966EB6B426CB974AAE37E1C75 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F490E9A9FFB4FE76FF9E02F9D97127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E3A27227C84992B8D7FDBEF919CA25 /* JTMaterialTransition-dummy.m in Sources */,
+				3B6F43580D0FF7AD9A1BA20589BCFE45 /* JTMaterialTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C826D335308C7FF787461131C6D45160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B849C168324B23EBC8D9222B37E5CE /* Pods-ParksideAdmissions-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A19C2FE7723F3B763C07612D68A7AA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JTMaterialTransition;
+			target = F619E87BFE638E6588E80CA42CAFB77E /* JTMaterialTransition */;
+			targetProxy = D790FCBE47CD41B59627EE9B6656BA44 /* PBXContainerItemProxy */;
+		};
+		1FC1006F1CD9FF0AFA2E014877AAC36C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JGMethodSwizzler;
+			target = 5909EBD0F72D9C0AE9725BC886282A9D /* JGMethodSwizzler */;
+			targetProxy = 3E4248B92F2D723BC4020E221D8D8204 /* PBXContainerItemProxy */;
+		};
+		3179A789115EB0D5056890ED126B4636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZFormSheetPresentationController;
+			target = 540D639ECCD13B6211E7C9E526447327 /* MZFormSheetPresentationController */;
+			targetProxy = E256B9D3375909F42D26D03B55A340D6 /* PBXContainerItemProxy */;
+		};
+		37D0BBBE6F815AB6C2F3F42330930FA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 14DBCD99409E7622F00ED4D041FF5421 /* UIColor_Hex_Swift */;
+			targetProxy = 6E8E8B908AF0418684CA0B7D9743386C /* PBXContainerItemProxy */;
+		};
+		3F9FB3084CF7FA8B26606EB80591B768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZAppearance;
+			target = FFABAFE9408FF95CFC8B3C3770D56837 /* MZAppearance */;
+			targetProxy = 259121DE345764065F4E933E5AC60B22 /* PBXContainerItemProxy */;
+		};
+		9A74CDA492754031C33B9FBAFAC1D0F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JGMethodSwizzler;
+			target = 5909EBD0F72D9C0AE9725BC886282A9D /* JGMethodSwizzler */;
+			targetProxy = 15281701308D543FD825F797A953A9B1 /* PBXContainerItemProxy */;
+		};
+		FFCA2630911466DBC6F52DBE83BB0155 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MZAppearance;
+			target = FFABAFE9408FF95CFC8B3C3770D56837 /* MZAppearance */;
+			targetProxy = 4740507CC864CFBC8FD38C414BFEC0B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08F5D9BCDFF7CE926D1A413963D315B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09227DDDC3171F3E07460274CAB5E57 /* MZAppearance.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MZAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		319DBDACE2B083C7D3F22D4726873B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB62296C3B9F3BF1177E3F8C8C924BA5 /* MZFormSheetPresentationController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZFormSheetPresentationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MZFormSheetPresentationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5381BAF3D00D57B0A279DF6591AD60FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762E4E60D1329D723A78D1D7BEA13C49 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5987876195121C0A841109EAB210E639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F654E66F5BB032AC28C82FEB220FA57 /* JTMaterialTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTMaterialTransition/JTMaterialTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTMaterialTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTMaterialTransition/JTMaterialTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JTMaterialTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6702AECF85548941E5EAC16E303F3B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A09227DDDC3171F3E07460274CAB5E57 /* MZAppearance.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MZAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69054B5DD0E9355300F5EE3BF3552C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB62296C3B9F3BF1177E3F8C8C924BA5 /* MZFormSheetPresentationController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZFormSheetPresentationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MZFormSheetPresentationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7324B2F89B174ECEF8320A0A7F062E6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F654E66F5BB032AC28C82FEB220FA57 /* JTMaterialTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTMaterialTransition/JTMaterialTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTMaterialTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTMaterialTransition/JTMaterialTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JTMaterialTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7931F29F1277271A6E5B0C1CB970333B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762E4E60D1329D723A78D1D7BEA13C49 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		81706E1857616EA330B506B549C7F0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8223695DD6BE5B00B89AADBCDC80E47 /* JGMethodSwizzler.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JGMethodSwizzler/JGMethodSwizzler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JGMethodSwizzler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JGMethodSwizzler/JGMethodSwizzler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JGMethodSwizzler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8635B2D28392FD38314C539525C0F2EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7C662B728557DFB2271D640B39B339 /* Pods-ParksideAdmissions.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParksideAdmissions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ParksideAdmissions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D121232E08EE7E6A2354B2F8E7E1BEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD19951C7F70C8D4444E7749CA8725B /* Pods-ParksideAdmissions.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParksideAdmissions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ParksideAdmissions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F74D768B85094B8D8B4A37DDBA9E74D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8223695DD6BE5B00B89AADBCDC80E47 /* JGMethodSwizzler.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JGMethodSwizzler/JGMethodSwizzler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JGMethodSwizzler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JGMethodSwizzler/JGMethodSwizzler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JGMethodSwizzler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08587589A4CF540F9D2283739C602056 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5381BAF3D00D57B0A279DF6591AD60FE /* Debug */,
+				7931F29F1277271A6E5B0C1CB970333B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CFC9BD79868997F0AE003804354EE0D /* Build configuration list for PBXNativeTarget "JTMaterialTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5987876195121C0A841109EAB210E639 /* Debug */,
+				7324B2F89B174ECEF8320A0A7F062E6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F651F6E43652F19E3C381EA0D349FA1 /* Build configuration list for PBXNativeTarget "JGMethodSwizzler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81706E1857616EA330B506B549C7F0E8 /* Debug */,
+				F74D768B85094B8D8B4A37DDBA9E74D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB57CCB18C20389DCA16B5B6B38ACCE9 /* Build configuration list for PBXNativeTarget "Pods-ParksideAdmissions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8635B2D28392FD38314C539525C0F2EE /* Debug */,
+				D121232E08EE7E6A2354B2F8E7E1BEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6F49B40E87DD6FD51340A1054B19A76 /* Build configuration list for PBXNativeTarget "MZFormSheetPresentationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69054B5DD0E9355300F5EE3BF3552C68 /* Debug */,
+				319DBDACE2B083C7D3F22D4726873B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBC1AC62CDB2CE27FBFC6C22AB3D1BD /* Build configuration list for PBXNativeTarget "MZAppearance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6702AECF85548941E5EAC16E303F3B4E /* Debug */,
+				08F5D9BCDFF7CE926D1A413963D315B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

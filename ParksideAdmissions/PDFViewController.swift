@@ -22,6 +22,9 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     @IBOutlet weak var otherSpace: UIView!
     var oldBackgroundColor:UIColor?
     
+    var banner: AnimatingBanner?
+    @IBOutlet weak var container: UIView!
+    
     // MARK: Initialization
     override func viewDidLoad() {
         let statusBar = UIToolbar(frame: CGRectMake(0, -20, self.view.frame.width , 20))
@@ -47,6 +50,8 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
             
             self.displayedPDF = true
         }
+        
+        view.addSubview(banner!)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -56,11 +61,15 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     
     override func viewWillDisappear(animated: Bool) {
         self.view.backgroundColor = self.oldBackgroundColor
+        self.masterController!.view.addSubview(banner!)
+    }
+        
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.Default
     }
     
     // MARK: QL Datasource
-    func numberOfPreviewItemsInPreviewController(controller: QLPreviewController) -> Int
-    {
+    func numberOfPreviewItemsInPreviewController(controller: QLPreviewController) -> Int {
         return MajorsNames.NAMES.count
     }
     
@@ -76,43 +85,53 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     @IBAction func backButtonPressed(sender: UIBarButtonItem)
     {
         self.dismissViewControllerAnimated(true) { () -> Void in
+            print("Removed")
+            //self.banner!.removeFromSuperview()
             self.masterController!.removeTemp()
+            self.masterController!.view.addSubview(self.banner!)
         }
     }
     
-    @IBAction func sendButtonPressed(sender: AnyObject)
-    {
-        let popupChoice = self.storyboard!.instantiateViewControllerWithIdentifier("SendChoicePopup") as! SendChoicePopup
-        let form = MZFormSheetPresentationController(contentViewController: popupChoice)
-        form.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyle.StyleBounce
-        form.contentViewSize = CGSizeMake(400, 250)
-        form.shouldDismissOnBackgroundViewTap = true
-        form.shouldCenterVertically = true
-        popupChoice.master = self
-        popupChoice.cardColor = self.oldBackgroundColor
+    @IBAction func emailButtonPressed(sender: AnyObject) {
+        let name = MajorsNames.NAMES[pdfIndex!]
         
-        self.presentViewController(form, animated: true, completion: nil)
+        let emailTitle = "Major PDF"
+        let messageBody = "\(name)"
+        let mc: MFMailComposeViewController = MFMailComposeViewController()
+        
+        if (MFMailComposeViewController.canSendMail()) {
+            mc.mailComposeDelegate = self
+            mc.setSubject(emailTitle)
+            mc.setMessageBody(messageBody, isHTML: false)
+            
+            let path = NSBundle.mainBundle().pathForResource(name, ofType: "pdf")
+            let data:NSData = NSData.dataWithContentsOfMappedFile(path!) as! NSData
+            mc.addAttachmentData(data, mimeType: "image/pdf", fileName: "\(name).pdf")
+            
+            self.presentViewController(mc, animated: true, completion: nil)
+
+        }
     }
-    
-    func print()
-    {
         
-    }
-    
-    func email()
-    {
-        var emailTitle = "Major PDF"
-        var messageBody = "\(Constants.majorNames[pdfIndex!])"
-        var mc: MFMailComposeViewController = MFMailComposeViewController()
-        mc.mailComposeDelegate = self
-        mc.setSubject(emailTitle)
-        mc.setMessageBody(messageBody, isHTML: false)
+    @IBAction func printButtonPressed(sender: AnyObject) {
+        let printController = UIPrintInteractionController.sharedPrintController()
+        let pdfPath = MajorsNames.NAMES[pdfIndex!]
         
-        let path = NSBundle.mainBundle().pathForResource(Constants.majorPdfFileName[pdfIndex!], ofType: "pdf")
-        let data:NSData = NSData.dataWithContentsOfMappedFile(path!) as! NSData
-        mc.addAttachmentData(data, mimeType: "image/pdf", fileName: "\(Constants.majorPdfFileName[pdfIndex!]).pdf")
+        let path = NSBundle.mainBundle().pathForResource(pdfPath, ofType: "pdf")
+        let data = NSData.dataWithContentsOfMappedFile(path!) as! NSData
         
-        self.presentViewController(mc, animated: true, completion: nil)
+        if UIPrintInteractionController.canPrintData(data) {
+            let printInfo = UIPrintInfo(dictionary: nil)
+            printInfo.outputType = .General
+            printInfo.jobName = "\(pdfPath)  PDF"
+            printInfo.duplex = .LongEdge
+            printController.printInfo = printInfo
+            
+            printController.showsPageRange = true
+            printController.printingItem = data
+            
+            printController.presentAnimated(true, completionHandler: nil)
+        }
     }
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?)

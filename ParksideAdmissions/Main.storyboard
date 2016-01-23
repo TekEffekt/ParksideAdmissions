@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeueLights.ttc">
@@ -24,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RTa-sp-g3F">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="481"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="10" id="UdJ-SR-8qf">
                                     <size key="itemSize" width="207" height="270"/>
@@ -58,16 +59,39 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WyL-jx-56t">
+                                <rect key="frame" x="0.0" y="545" width="600" height="55"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="8ws-dc-UkT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgd-vT-4gA">
+                                <rect key="frame" x="0.0" y="544" width="600" height="0.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="aXq-V3-rqF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0039215686274509803" green="0.63529411764705879" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="RTa-sp-g3F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3a2-sg-dPj"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RTa-sp-g3F" secondAttribute="bottom" id="460-b9-FRr"/>
                             <constraint firstItem="RTa-sp-g3F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Lj-mS-ILX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RTa-sp-g3F" secondAttribute="trailing" constant="-20" id="A0K-0R-nFT"/>
+                            <constraint firstItem="RTa-sp-g3F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="AoT-Va-hlp"/>
+                            <constraint firstItem="tgd-vT-4gA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="G3N-3i-gaK"/>
                             <constraint firstItem="RTa-sp-g3F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cEP-2I-wdR"/>
-                            <constraint firstItem="RTa-sp-g3F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="uiL-WX-0Wf"/>
+                            <constraint firstItem="RTa-sp-g3F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="f1L-UH-HAT"/>
+                            <constraint firstItem="WyL-jx-56t" firstAttribute="top" secondItem="tgd-vT-4gA" secondAttribute="bottom" id="fvd-ka-30i"/>
+                            <constraint firstItem="WyL-jx-56t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="i8t-Kn-9no"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WyL-jx-56t" secondAttribute="bottom" id="iCP-no-S0i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WyL-jx-56t" secondAttribute="trailing" constant="-20" id="jv2-nl-hzr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RTa-sp-g3F" secondAttribute="trailing" constant="-20" id="lJN-rN-26r"/>
+                            <constraint firstItem="WyL-jx-56t" firstAttribute="top" secondItem="RTa-sp-g3F" secondAttribute="bottom" id="nJV-38-DTR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tgd-vT-4gA" secondAttribute="trailing" constant="-20" id="opo-3n-RM9"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -78,7 +102,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Choose A Major" id="BcA-4Z-RtS"/>
                     <connections>
+                        <outlet property="bannerContainer" destination="WyL-jx-56t" id="3PX-em-zAn"/>
                         <outlet property="buttonCollection" destination="RTa-sp-g3F" id="OvE-2G-H9F"/>
+                        <outlet property="lineHeightConstraint" destination="aXq-V3-rqF" id="29U-gb-ACw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-Us-JiO">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="481"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVo-Qd-4ua">
@@ -115,12 +141,19 @@
                                                 <action selector="backButtonPressed:" destination="qde-Pc-v6z" id="LGL-oe-Rfd"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" image="Airplane" id="Qub-5D-b6X">
-                                            <color key="tintColor" red="0.0" green="0.43921568630000002" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="sendButtonPressed:" destination="qde-Pc-v6z" id="V5U-J3-y2u"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="Email" id="Qub-5D-b6X">
+                                                <color key="tintColor" red="0.0" green="0.43921568630000002" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="emailButtonPressed:" destination="qde-Pc-v6z" id="aaq-El-8Mm"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem image="Printer" id="fZM-pn-8Rj">
+                                                <connections>
+                                                    <action selector="printButtonPressed:" destination="qde-Pc-v6z" id="Tqc-CE-12z"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
                                     </navigationItem>
                                 </items>
                                 <variation key="default">
@@ -130,15 +163,28 @@
                                     </mask>
                                 </variation>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvd-cA-4Cs">
+                                <rect key="frame" x="0.0" y="545" width="600" height="55"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="sd3-Wy-cuB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="5fh-Us-JiO" secondAttribute="trailing" constant="-20" id="1Uz-EM-Sno"/>
-                            <constraint firstItem="5fh-Us-JiO" firstAttribute="leading" secondItem="DgZ-0J-e2g" secondAttribute="leadingMargin" constant="-20" id="AOd-a6-gDS"/>
+                            <constraint firstItem="cvd-cA-4Cs" firstAttribute="top" secondItem="5fh-Us-JiO" secondAttribute="bottom" id="BdX-AX-Adr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EVo-Qd-4ua" secondAttribute="trailing" constant="-20" id="Bzr-nB-dgW"/>
                             <constraint firstItem="vDR-0C-hSy" firstAttribute="top" secondItem="EVo-Qd-4ua" secondAttribute="bottom" constant="536" id="SfC-K7-ouT"/>
-                            <constraint firstItem="vDR-0C-hSy" firstAttribute="top" secondItem="5fh-Us-JiO" secondAttribute="bottom" id="aX2-uY-ri6"/>
-                            <constraint firstItem="5fh-Us-JiO" firstAttribute="top" secondItem="EVo-Qd-4ua" secondAttribute="bottom" id="clp-zI-OeX"/>
+                            <constraint firstItem="5fh-Us-JiO" firstAttribute="top" secondItem="EVo-Qd-4ua" secondAttribute="bottom" id="Tok-G5-th2"/>
+                            <constraint firstItem="vDR-0C-hSy" firstAttribute="top" secondItem="cvd-cA-4Cs" secondAttribute="bottom" id="c5W-A9-2l6"/>
+                            <constraint firstItem="5fh-Us-JiO" firstAttribute="leading" secondItem="DgZ-0J-e2g" secondAttribute="leadingMargin" constant="-20" id="gxr-dq-QxF"/>
+                            <constraint firstItem="cvd-cA-4Cs" firstAttribute="leading" secondItem="DgZ-0J-e2g" secondAttribute="leadingMargin" constant="-20" id="iqY-Jw-X4s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5fh-Us-JiO" secondAttribute="trailing" constant="-20" id="pdk-Do-cMl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cvd-cA-4Cs" secondAttribute="trailing" constant="-20" id="r0m-P9-1S8"/>
                             <constraint firstItem="EVo-Qd-4ua" firstAttribute="leading" secondItem="DgZ-0J-e2g" secondAttribute="leadingMargin" constant="-20" id="wLL-ni-qx3"/>
                             <constraint firstItem="EVo-Qd-4ua" firstAttribute="top" secondItem="uLZ-xP-jrt" secondAttribute="bottom" id="xbl-ea-gtL"/>
                         </constraints>
@@ -150,6 +196,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="jJB-ea-p2a"/>
                     <connections>
+                        <outlet property="container" destination="cvd-cA-4Cs" id="8sx-g3-A8E"/>
                         <outlet property="navBar" destination="EVo-Qd-4ua" id="K6V-RZ-HeA"/>
                         <outlet property="otherSpace" destination="5fh-Us-JiO" id="m4p-Fp-tIz"/>
                     </connections>
@@ -236,7 +283,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Airplane" width="26" height="26"/>
         <image name="AppliedHealthScience" width="347" height="347"/>
+        <image name="Email" width="29" height="29"/>
+        <image name="Printer" width="29" height="29"/>
     </resources>
 </document>

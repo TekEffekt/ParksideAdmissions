@@ -10,6 +10,8 @@
 		32682EA9BA9D214BA04AEF97 /* Pods_ParksideAdmissions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DE01A048B1829F5B047595 /* Pods_ParksideAdmissions.framework */; };
 		B60A173F1C346C1D00A5BB81 /* HealthInfoManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */; };
 		B60A17411C346C3700A5BB81 /* AppliedHealthSciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */; };
+		B60C97921C52E39400EEBE0E /* MyPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97911C52E39400EEBE0E /* MyPreviewController.swift */; };
+		B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97931C52F72100EEBE0E /* PDFViewController.swift */; };
 		B62E5F961C33CEF200C4D0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E5F951C33CEF200C4D0D1 /* Main.storyboard */; };
 		B62E5F9D1C33CF1A00C4D0D1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5F981C33CF1A00C4D0D1 /* CardView.swift */; };
 		B62E5F9E1C33CF1A00C4D0D1 /* MajorButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5F991C33CF1A00C4D0D1 /* MajorButtonCell.swift */; };
@@ -17,11 +19,9 @@
 		B62E5FA01C33CF1A00C4D0D1 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5F9B1C33CF1A00C4D0D1 /* MKColor.swift */; };
 		B62E5FA11C33CF1A00C4D0D1 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5F9C1C33CF1A00C4D0D1 /* MKLayer.swift */; };
 		B62E5FA81C33CF4200C4D0D1 /* MajorSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */; };
-		B62E5FA91C33CF4200C4D0D1 /* MyPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FA51C33CF4200C4D0D1 /* MyPreviewController.swift */; };
-		B62E5FAA1C33CF4200C4D0D1 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FA61C33CF4200C4D0D1 /* PDFViewController.swift */; };
-		B62E5FAB1C33CF4200C4D0D1 /* SendChoicePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FA71C33CF4200C4D0D1 /* SendChoicePopup.swift */; };
 		B62E5FDF1C33CF6D00C4D0D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FDD1C33CF6D00C4D0D1 /* Constants.swift */; };
 		B62E5FE01C33CF6D00C4D0D1 /* ParksideMajorColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FDE1C33CF6D00C4D0D1 /* ParksideMajorColors.swift */; };
+		B661E6941C509C5500397311 /* AnimatingBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661E6931C509C5500397311 /* AnimatingBanner.swift */; };
 		B67DAAC41C33D2FE008D2E7A /* JTMaterialTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DAAC31C33D2FE008D2E7A /* JTMaterialTransition.m */; };
 		B67DAAC81C33D34C008D2E7A /* MZFormSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DAAC71C33D34C008D2E7A /* MZFormSheetPresentationController.m */; };
 		B67DAACB1C33D364008D2E7A /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DAACA1C33D364008D2E7A /* MZTransition.m */; };
@@ -61,6 +61,7 @@
 		B67DAB161C33E1A1008D2E7A /* GraphicDesign.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB151C33E1A1008D2E7A /* GraphicDesign.pdf */; };
 		B67DAB181C33E1D0008D2E7A /* Sociology.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB171C33E1D0008D2E7A /* Sociology.pdf */; };
 		B67DAB1A1C346538008D2E7A /* Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB191C346538008D2E7A /* Spanish.pdf */; };
+		B6A6DF151C51636200195056 /* Nav+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6DF141C51636200195056 /* Nav+StatusBar.swift */; };
 		B6F2065A1C33CD5D000595CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F206591C33CD5D000595CD /* AppDelegate.swift */; };
 		B6F206611C33CD5D000595CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F206601C33CD5D000595CD /* Assets.xcassets */; };
 		B6F206641C33CD5D000595CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F206621C33CD5D000595CD /* LaunchScreen.storyboard */; };
@@ -91,6 +92,8 @@
 		36BDBD976DFF612BE17A40BF /* Pods-ParksideAdmissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParksideAdmissions.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions.release.xcconfig"; sourceTree = "<group>"; };
 		B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HealthInfoManagement.pdf; sourceTree = "<group>"; };
 		B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AppliedHealthSciences.pdf; sourceTree = "<group>"; };
+		B60C97911C52E39400EEBE0E /* MyPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPreviewController.swift; sourceTree = "<group>"; };
+		B60C97931C52F72100EEBE0E /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		B62E5F951C33CEF200C4D0D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B62E5F981C33CF1A00C4D0D1 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Views/CardView.swift; sourceTree = "<group>"; };
 		B62E5F991C33CF1A00C4D0D1 /* MajorButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MajorButtonCell.swift; path = Views/MajorButtonCell.swift; sourceTree = "<group>"; };
@@ -98,11 +101,9 @@
 		B62E5F9B1C33CF1A00C4D0D1 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Views/MKColor.swift; sourceTree = "<group>"; };
 		B62E5F9C1C33CF1A00C4D0D1 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Views/MKLayer.swift; sourceTree = "<group>"; };
 		B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MajorSelectViewController.swift; path = "View Controllers/MajorSelectViewController.swift"; sourceTree = "<group>"; };
-		B62E5FA51C33CF4200C4D0D1 /* MyPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPreviewController.swift; path = "View Controllers/MyPreviewController.swift"; sourceTree = "<group>"; };
-		B62E5FA61C33CF4200C4D0D1 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFViewController.swift; path = "View Controllers/PDFViewController.swift"; sourceTree = "<group>"; };
-		B62E5FA71C33CF4200C4D0D1 /* SendChoicePopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SendChoicePopup.swift; path = "View Controllers/SendChoicePopup.swift"; sourceTree = "<group>"; };
 		B62E5FDD1C33CF6D00C4D0D1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Model/Constants.swift; sourceTree = "<group>"; };
 		B62E5FDE1C33CF6D00C4D0D1 /* ParksideMajorColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParksideMajorColors.swift; path = Model/ParksideMajorColors.swift; sourceTree = "<group>"; };
+		B661E6931C509C5500397311 /* AnimatingBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatingBanner.swift; path = Views/AnimatingBanner.swift; sourceTree = "<group>"; };
 		B67DAAC21C33D2FE008D2E7A /* JTMaterialTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMaterialTransition.h; sourceTree = "<group>"; };
 		B67DAAC31C33D2FE008D2E7A /* JTMaterialTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTMaterialTransition.m; sourceTree = "<group>"; };
 		B67DAAC51C33D31B008D2E7A /* ParksideAdmissions-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ParksideAdmissions-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 		B67DAB151C33E1A1008D2E7A /* GraphicDesign.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GraphicDesign.pdf; sourceTree = "<group>"; };
 		B67DAB171C33E1D0008D2E7A /* Sociology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sociology.pdf; sourceTree = "<group>"; };
 		B67DAB191C346538008D2E7A /* Spanish.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Spanish.pdf; sourceTree = "<group>"; };
+		B6A6DF141C51636200195056 /* Nav+StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Nav+StatusBar.swift"; path = "Views/Nav+StatusBar.swift"; sourceTree = "<group>"; };
 		B6F206561C33CD5D000595CD /* Our Majors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Our Majors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F206591C33CD5D000595CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F206601C33CD5D000595CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -207,6 +209,8 @@
 		B62E5F971C33CF0E00C4D0D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B6A6DF141C51636200195056 /* Nav+StatusBar.swift */,
+				B661E6931C509C5500397311 /* AnimatingBanner.swift */,
 				B62E5F981C33CF1A00C4D0D1 /* CardView.swift */,
 				B62E5F991C33CF1A00C4D0D1 /* MajorButtonCell.swift */,
 				B62E5F9A1C33CF1A00C4D0D1 /* MKButton.swift */,
@@ -220,9 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */,
-				B62E5FA51C33CF4200C4D0D1 /* MyPreviewController.swift */,
-				B62E5FA61C33CF4200C4D0D1 /* PDFViewController.swift */,
-				B62E5FA71C33CF4200C4D0D1 /* SendChoicePopup.swift */,
+				B60C97931C52F72100EEBE0E /* PDFViewController.swift */,
+				B60C97911C52E39400EEBE0E /* MyPreviewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -574,19 +577,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B67DAAD21C33D59C008D2E7A /* ParksideMajorNames.swift in Sources */,
-				B62E5FAA1C33CF4200C4D0D1 /* PDFViewController.swift in Sources */,
+				B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */,
 				B62E5FDF1C33CF6D00C4D0D1 /* Constants.swift in Sources */,
 				B67DAAC81C33D34C008D2E7A /* MZFormSheetPresentationController.m in Sources */,
+				B6A6DF151C51636200195056 /* Nav+StatusBar.swift in Sources */,
 				B62E5FE01C33CF6D00C4D0D1 /* ParksideMajorColors.swift in Sources */,
-				B62E5FAB1C33CF4200C4D0D1 /* SendChoicePopup.swift in Sources */,
+				B661E6941C509C5500397311 /* AnimatingBanner.swift in Sources */,
 				B67DAACE1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.m in Sources */,
-				B62E5FA91C33CF4200C4D0D1 /* MyPreviewController.swift in Sources */,
 				B62E5F9D1C33CF1A00C4D0D1 /* CardView.swift in Sources */,
 				B62E5FA11C33CF1A00C4D0D1 /* MKLayer.swift in Sources */,
 				B62E5FA81C33CF4200C4D0D1 /* MajorSelectViewController.swift in Sources */,
 				B62E5F9F1C33CF1A00C4D0D1 /* MKButton.swift in Sources */,
 				B6F2065A1C33CD5D000595CD /* AppDelegate.swift in Sources */,
 				B67DAAC41C33D2FE008D2E7A /* JTMaterialTransition.m in Sources */,
+				B60C97921C52E39400EEBE0E /* MyPreviewController.swift in Sources */,
 				B62E5FA01C33CF1A00C4D0D1 /* MKColor.swift in Sources */,
 				B67DAACB1C33D364008D2E7A /* MZTransition.m in Sources */,
 				B62E5F9E1C33CF1A00C4D0D1 /* MajorButtonCell.swift in Sources */,
@@ -732,7 +736,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParksideAdmissions/ParksideAdmissions-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -750,7 +754,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParksideAdmissions/ParksideAdmissions-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

@@ -17,6 +17,10 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
     var transition:JTMaterialTransition?
     var tempButton:MKButton?
     
+    @IBOutlet weak var lineHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var bannerContainer: UIView!
+    var banner: AnimatingBanner?
+    
     // MARK: Initialization
     override func viewDidLoad()
     {
@@ -25,11 +29,20 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         // Do any additional setup after loading the view.
         self.buttonCollection.delegate = self
         self.buttonCollection.dataSource = self
+        
+        lineHeightConstraint.constant = 0.5        
     }
     
     override func viewWillAppear(animated: Bool)
     {
         self.automaticallyAdjustsScrollViewInsets = false
+        
+        let shadowPath = UIBezierPath(rect: bannerContainer.bounds)
+        bannerContainer.layer.masksToBounds = false
+        bannerContainer.layer.shadowColor = UIColor.blackColor().CGColor
+        bannerContainer.layer.shadowOffset = CGSize(width: 0, height: 0.2)
+        bannerContainer.layer.shadowOpacity = 0.2
+        bannerContainer.layer.shadowPath = shadowPath.CGPath
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -38,23 +51,15 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
             self.tempButton!.removeFromSuperview()
             self.tempButton = nil
         }
+        
+        if banner == nil {
+            banner = AnimatingBanner(frame: bannerContainer.frame, andColor: bannerContainer.backgroundColor!)
+            view.addSubview(banner!)
+        }
     }
     
-    func setupAppFactoryLogo()
-    {
-        let old = UIImage(named: "App Factory Logo")
-    
-        let rect = CGRectMake(0,0,142,50.4)
-        UIGraphicsBeginImageContext( rect.size );
-        old!.drawInRect(rect)
-        let picture1 = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
+    override func viewDidDisappear(animated: Bool) {
         
-        let imageData = UIImagePNGRepresentation(picture1);
-        let img = UIImage(data: imageData!)
-        let logo = UIImageView(image: img)
-        
-        self.navigationItem.titleView = logo
     }
 
     // MARK: Collection View Data Source
@@ -105,12 +110,12 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
     func presentPdf(withSelectedCell cell:MajorButtonCell) {
         let pdfController = self.storyboard!.instantiateViewControllerWithIdentifier("pdfController") as! PDFViewController
         pdfController.pdfIndex = cell.index
-        print(cell.index)
         pdfController.modalPresentationStyle = UIModalPresentationStyle.Custom
         pdfController.transitioningDelegate = self
         let randomColorI = cell.index! % GetColors.getList().count
         pdfController.view.backgroundColor = GetColors.getList()[randomColorI]
         pdfController.masterController = self
+        pdfController.banner = self.banner
         self.presentViewController(pdfController, animated: true, completion: nil)
     }
     
@@ -124,8 +129,7 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         return self.transition
     }
     
-    func removeTemp()
-    {
+    func removeTemp() {
         self.tempButton!.removeFromSuperview()
     }
     

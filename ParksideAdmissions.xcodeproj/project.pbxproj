@@ -12,6 +12,7 @@
 		B60A17411C346C3700A5BB81 /* AppliedHealthSciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */; };
 		B60C97921C52E39400EEBE0E /* MyPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97911C52E39400EEBE0E /* MyPreviewController.swift */; };
 		B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97931C52F72100EEBE0E /* PDFViewController.swift */; };
+		B60C97961C54771B00EEBE0E /* AppFactoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */; };
 		B62E5F961C33CEF200C4D0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E5F951C33CEF200C4D0D1 /* Main.storyboard */; };
 		B62E5F9D1C33CF1A00C4D0D1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5F981C33CF1A00C4D0D1 /* CardView.swift */; };
 		B62E5F9E1C33CF1A00C4D0D1 /* MajorButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5F991C33CF1A00C4D0D1 /* MajorButtonCell.swift */; };
@@ -94,6 +95,7 @@
 		B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AppliedHealthSciences.pdf; sourceTree = "<group>"; };
 		B60C97911C52E39400EEBE0E /* MyPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPreviewController.swift; sourceTree = "<group>"; };
 		B60C97931C52F72100EEBE0E /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFactoryWebViewController.swift; path = "View Controllers/AppFactoryWebViewController.swift"; sourceTree = "<group>"; };
 		B62E5F951C33CEF200C4D0D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B62E5F981C33CF1A00C4D0D1 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Views/CardView.swift; sourceTree = "<group>"; };
 		B62E5F991C33CF1A00C4D0D1 /* MajorButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MajorButtonCell.swift; path = Views/MajorButtonCell.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */,
+				B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */,
 				B60C97931C52F72100EEBE0E /* PDFViewController.swift */,
 				B60C97911C52E39400EEBE0E /* MyPreviewController.swift */,
 			);
@@ -580,6 +583,7 @@
 				B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */,
 				B62E5FDF1C33CF6D00C4D0D1 /* Constants.swift in Sources */,
 				B67DAAC81C33D34C008D2E7A /* MZFormSheetPresentationController.m in Sources */,
+				B60C97961C54771B00EEBE0E /* AppFactoryWebViewController.swift in Sources */,
 				B6A6DF151C51636200195056 /* Nav+StatusBar.swift in Sources */,
 				B62E5FE01C33CF6D00C4D0D1 /* ParksideMajorColors.swift in Sources */,
 				B661E6941C509C5500397311 /* AnimatingBanner.swift in Sources */,
@@ -730,6 +734,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ParksideAdmissions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.ParksideAdmissions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -749,6 +754,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ParksideAdmissions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.ParksideAdmissions;
 				PRODUCT_NAME = "$(TARGET_NAME)";

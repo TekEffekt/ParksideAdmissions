@@ -41,6 +41,8 @@ class AnimatingBanner: UIView {
         mask.backgroundColor = backgroundColor
         
         setupAnimationTimer()
+        
+        userInteractionEnabled = false
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -65,7 +67,6 @@ class AnimatingBanner: UIView {
     
     func timeCount() {
         time += 1
-        print(time)
     }
     
     func playAnimation() {

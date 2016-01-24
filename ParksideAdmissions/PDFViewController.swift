@@ -11,7 +11,7 @@ import UIKit
 import QuickLook
 import MessageUI
 
-class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate
+class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate, UIGestureRecognizerDelegate
 {
     // MARK: Properties
     var masterController:MajorSelectViewController?
@@ -32,6 +32,8 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         statusBar.backgroundColor = self.navBar.barTintColor
         statusBar.barTintColor = self.navBar.barTintColor
         self.navBar.addSubview(statusBar)
+        
+        setupBannerTapGesture()
     }
     
     override func viewWillAppear(animated: Bool)
@@ -51,7 +53,22 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
             self.displayedPDF = true
         }
         
+        navigationController!.navigationBarHidden = true
+        
         view.addSubview(banner!)
+        
+        setupBannerShadow()
+    }
+    
+    private func setupBannerShadow() {
+        var rect = container.bounds
+        rect.size.width = view.frame.width
+        let shadowPath = UIBezierPath(rect: rect)
+        container.layer.masksToBounds = false
+        container.layer.shadowColor = UIColor.blackColor().CGColor
+        container.layer.shadowOffset = CGSize(width: 0, height: 0.4)
+        container.layer.shadowOpacity = 0.2
+        container.layer.shadowPath = shadowPath.CGPath
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -66,6 +83,24 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.Default
+    }
+    
+    private func setupBannerTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: "bannerTapped")
+        tap.delegate = self
+        container.addGestureRecognizer(tap)
+    }
+    
+    // MARK: Banner Clicked
+    func bannerTapped() {
+        performSegueWithIdentifier("otherPresentWebView", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destination = segue.destinationViewController as! AppFactoryWebViewController
+        destination.fromPDF = true
+        
+        destination.backColor = view.tintColor
     }
     
     // MARK: QL Datasource

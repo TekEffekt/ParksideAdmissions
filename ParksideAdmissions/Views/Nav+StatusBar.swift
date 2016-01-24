@@ -8,6 +8,12 @@
 
 extension UINavigationController {
     override public func preferredStatusBarStyle() -> UIStatusBarStyle {
+        if let vc = visibleViewController as? AppFactoryWebViewController {
+            if vc.fromPDF {
+                return UIStatusBarStyle.Default
+            }
+        }
+        
         return UIStatusBarStyle.LightContent
     }
 }

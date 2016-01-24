@@ -8,8 +8,10 @@
 //  This class controls the selection of a major, and upon that selection, will bring up the PDF for that major.
 
 import UIKit
+import SafariServices
 
-class MajorSelectViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIViewControllerTransitioningDelegate
+class MajorSelectViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,
+    UIViewControllerTransitioningDelegate, UIGestureRecognizerDelegate
 {
     // MARK: Properties
     @IBOutlet weak var buttonCollection: UICollectionView!
@@ -30,17 +32,25 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         self.buttonCollection.delegate = self
         self.buttonCollection.dataSource = self
         
-        lineHeightConstraint.constant = 0.5        
+        lineHeightConstraint.constant = 0.5
+        
+        setupBannerTapGesture()
     }
     
     override func viewWillAppear(animated: Bool)
     {
         self.automaticallyAdjustsScrollViewInsets = false
         
-        let shadowPath = UIBezierPath(rect: bannerContainer.bounds)
+        setupBannerShadow()
+    }
+    
+    private func setupBannerShadow() {
+        var rect = bannerContainer.bounds
+        rect.size.width = view.frame.width
+        let shadowPath = UIBezierPath(rect: rect)
         bannerContainer.layer.masksToBounds = false
         bannerContainer.layer.shadowColor = UIColor.blackColor().CGColor
-        bannerContainer.layer.shadowOffset = CGSize(width: 0, height: 0.2)
+        bannerContainer.layer.shadowOffset = CGSize(width: 0, height: 0.4)
         bannerContainer.layer.shadowOpacity = 0.2
         bannerContainer.layer.shadowPath = shadowPath.CGPath
     }
@@ -58,10 +68,23 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         }
     }
     
-    override func viewDidDisappear(animated: Bool) {
-        
+    private func setupBannerTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: "bannerTapped")
+        tap.delegate = self
+        bannerContainer.addGestureRecognizer(tap)
     }
-
+    
+    // MARK: Banner Clicked
+    func bannerTapped() {
+        performSegueWithIdentifier("presentWebView", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destination = segue.destinationViewController as! AppFactoryWebViewController
+        
+        destination.backColor = view.tintColor
+    }
+    
     // MARK: Collection View Data Source
     func numberOfSectionsInCollectionView(collectionView:UICollectionView) -> Int {
             return 1
@@ -108,15 +131,17 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func presentPdf(withSelectedCell cell:MajorButtonCell) {
-        let pdfController = self.storyboard!.instantiateViewControllerWithIdentifier("pdfController") as! PDFViewController
+        let nav = self.storyboard!.instantiateViewControllerWithIdentifier("pdfController") as! UINavigationController
+        let pdfController = nav.visibleViewController as! PDFViewController
         pdfController.pdfIndex = cell.index
-        pdfController.modalPresentationStyle = UIModalPresentationStyle.Custom
-        pdfController.transitioningDelegate = self
+        nav.modalPresentationStyle = UIModalPresentationStyle.Custom
+        nav.transitioningDelegate = self
         let randomColorI = cell.index! % GetColors.getList().count
         pdfController.view.backgroundColor = GetColors.getList()[randomColorI]
+        nav.view.backgroundColor = GetColors.getList()[randomColorI]
         pdfController.masterController = self
         pdfController.banner = self.banner
-        self.presentViewController(pdfController, animated: true, completion: nil)
+        self.presentViewController(nav, animated: true, completion: nil)
     }
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

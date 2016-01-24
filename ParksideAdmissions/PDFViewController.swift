@@ -72,12 +72,12 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.oldBackgroundColor = self.view.backgroundColor
-        self.view.backgroundColor = UIColor.whiteColor()
+        self.oldBackgroundColor = navigationController!.view.backgroundColor
+        navigationController!.view.backgroundColor = UIColor.whiteColor()
     }
     
     override func viewWillDisappear(animated: Bool) {
-        self.view.backgroundColor = self.oldBackgroundColor
+        navigationController!.view.backgroundColor = oldBackgroundColor
         self.masterController!.view.addSubview(banner!)
     }
         

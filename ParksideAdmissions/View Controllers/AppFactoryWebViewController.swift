@@ -12,6 +12,7 @@ class AppFactoryWebViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
     var backColor: UIColor?
+    var oldNavColor: UIColor?
     
     var fromPDF = false
     
@@ -27,8 +28,16 @@ class AppFactoryWebViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
     override func viewWillAppear(animated: Bool) {
         navigationController!.navigationBar.tintColor = backColor!
+        webView.backgroundColor = UIColor.whiteColor()
+        
+        oldNavColor = navigationController!.navigationBar.barTintColor
+        navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        navigationController!.navigationBar.barTintColor = oldNavColor
+    }
+    
 }

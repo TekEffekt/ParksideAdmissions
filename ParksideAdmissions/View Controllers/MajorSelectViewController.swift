@@ -137,7 +137,6 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         nav.modalPresentationStyle = UIModalPresentationStyle.Custom
         nav.transitioningDelegate = self
         let randomColorI = cell.index! % GetColors.getList().count
-        pdfController.view.backgroundColor = GetColors.getList()[randomColorI]
         nav.view.backgroundColor = GetColors.getList()[randomColorI]
         pdfController.masterController = self
         pdfController.banner = self.banner

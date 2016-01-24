@@ -32,12 +32,16 @@ class AppFactoryWebViewController: UIViewController {
         navigationController!.navigationBar.tintColor = backColor!
         webView.backgroundColor = UIColor.whiteColor()
         
+        if fromPDF {
+            navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
+        }
         oldNavColor = navigationController!.navigationBar.barTintColor
-        navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
     }
     
     override func viewDidAppear(animated: Bool) {
-        navigationController!.navigationBar.barTintColor = oldNavColor
+        if fromPDF {
+            navigationController!.navigationBar.barTintColor = oldNavColor
+        }
     }
     
 }

@@ -75,9 +75,7 @@ class AnimatingBanner: UIView {
         } else {
             justLoaded = false
             startAnimation()
-        }
-        
-        print("anim")
+        }        
     }
     
     func startAnimation() {

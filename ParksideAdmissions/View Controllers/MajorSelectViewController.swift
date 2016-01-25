@@ -42,6 +42,8 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         self.automaticallyAdjustsScrollViewInsets = false
         
         setupBannerShadow()
+        
+        startScreenTracking()
     }
     
     private func setupBannerShadow() {
@@ -74,8 +76,20 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         bannerContainer.addGestureRecognizer(tap)
     }
     
+    func startScreenTracking() {
+        let tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: "Major Selection Screen")
+        
+        let builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
+    }
+    
     // MARK: Banner Clicked
     func bannerTapped() {
+        var tracker = GAI.sharedInstance().defaultTracker
+        
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Banner Tapped", action: "From Selection Screen", label: "", value: nil).build() as [NSObject : AnyObject])
+        
         performSegueWithIdentifier("presentWebView", sender: self)
     }
     

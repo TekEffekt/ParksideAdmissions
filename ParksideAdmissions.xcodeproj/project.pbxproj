@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32682EA9BA9D214BA04AEF97 /* Pods_ParksideAdmissions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DE01A048B1829F5B047595 /* Pods_ParksideAdmissions.framework */; };
+		68B8B04CD0BA2FC1E897019E /* libPods-Our Majors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 059C4C050D5ECA56D4A61839 /* libPods-Our Majors.a */; };
 		B60A173F1C346C1D00A5BB81 /* HealthInfoManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */; };
 		B60A17411C346C3700A5BB81 /* AppliedHealthSciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */; };
 		B60C97921C52E39400EEBE0E /* MyPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97911C52E39400EEBE0E /* MyPreviewController.swift */; };
@@ -23,10 +23,6 @@
 		B62E5FDF1C33CF6D00C4D0D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FDD1C33CF6D00C4D0D1 /* Constants.swift */; };
 		B62E5FE01C33CF6D00C4D0D1 /* ParksideMajorColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FDE1C33CF6D00C4D0D1 /* ParksideMajorColors.swift */; };
 		B661E6941C509C5500397311 /* AnimatingBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661E6931C509C5500397311 /* AnimatingBanner.swift */; };
-		B67DAAC41C33D2FE008D2E7A /* JTMaterialTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DAAC31C33D2FE008D2E7A /* JTMaterialTransition.m */; };
-		B67DAAC81C33D34C008D2E7A /* MZFormSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DAAC71C33D34C008D2E7A /* MZFormSheetPresentationController.m */; };
-		B67DAACB1C33D364008D2E7A /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DAACA1C33D364008D2E7A /* MZTransition.m */; };
-		B67DAACE1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DAACD1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.m */; };
 		B67DAAD21C33D59C008D2E7A /* ParksideMajorNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DAAD11C33D59C008D2E7A /* ParksideMajorNames.swift */; };
 		B67DAAEB1C33DAF3008D2E7A /* Accounting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAD31C33DAF3008D2E7A /* Accounting.pdf */; };
 		B67DAAED1C33DAF3008D2E7A /* Biology.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAD51C33DAF3008D2E7A /* Biology.pdf */; };
@@ -68,6 +64,11 @@
 		B6F206641C33CD5D000595CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F206621C33CD5D000595CD /* LaunchScreen.storyboard */; };
 		B6F2066F1C33CD5D000595CD /* ParksideAdmissionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2066E1C33CD5D000595CD /* ParksideAdmissionsTests.swift */; };
 		B6F2067A1C33CD5D000595CD /* ParksideAdmissionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F206791C33CD5D000595CD /* ParksideAdmissionsUITests.swift */; };
+		B6F5CBF81C55F25D003D7748 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F5CBF71C55F25D003D7748 /* CoreData.framework */; };
+		B6F5CBFA1C55F26C003D7748 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F5CBF91C55F26C003D7748 /* SystemConfiguration.framework */; };
+		B6F5CBFC1C55F27B003D7748 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F5CBFB1C55F27B003D7748 /* libz.tbd */; };
+		B6F5CBFE1C55F291003D7748 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F5CBFD1C55F291003D7748 /* libsqlite3.tbd */; };
+		B6F5CC001C55F58A003D7748 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F5CBFF1C55F58A003D7748 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,9 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		162DF1346733902089B1A865 /* Pods-ParksideAdmissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParksideAdmissions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions.debug.xcconfig"; sourceTree = "<group>"; };
-		17DE01A048B1829F5B047595 /* Pods_ParksideAdmissions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParksideAdmissions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36BDBD976DFF612BE17A40BF /* Pods-ParksideAdmissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParksideAdmissions.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions.release.xcconfig"; sourceTree = "<group>"; };
+		059C4C050D5ECA56D4A61839 /* libPods-Our Majors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Our Majors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D376669940278902128870 /* Pods-Our Majors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Our Majors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Our Majors/Pods-Our Majors.debug.xcconfig"; sourceTree = "<group>"; };
 		B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HealthInfoManagement.pdf; sourceTree = "<group>"; };
 		B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AppliedHealthSciences.pdf; sourceTree = "<group>"; };
 		B60C97911C52E39400EEBE0E /* MyPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPreviewController.swift; sourceTree = "<group>"; };
@@ -106,16 +106,6 @@
 		B62E5FDD1C33CF6D00C4D0D1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Model/Constants.swift; sourceTree = "<group>"; };
 		B62E5FDE1C33CF6D00C4D0D1 /* ParksideMajorColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParksideMajorColors.swift; path = Model/ParksideMajorColors.swift; sourceTree = "<group>"; };
 		B661E6931C509C5500397311 /* AnimatingBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatingBanner.swift; path = Views/AnimatingBanner.swift; sourceTree = "<group>"; };
-		B67DAAC21C33D2FE008D2E7A /* JTMaterialTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMaterialTransition.h; sourceTree = "<group>"; };
-		B67DAAC31C33D2FE008D2E7A /* JTMaterialTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTMaterialTransition.m; sourceTree = "<group>"; };
-		B67DAAC51C33D31B008D2E7A /* ParksideAdmissions-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ParksideAdmissions-Bridging-Header.h"; sourceTree = "<group>"; };
-		B67DAAC61C33D34C008D2E7A /* MZFormSheetPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationController.h; sourceTree = "<group>"; };
-		B67DAAC71C33D34C008D2E7A /* MZFormSheetPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetPresentationController.m; sourceTree = "<group>"; };
-		B67DAAC91C33D364008D2E7A /* MZTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTransition.h; sourceTree = "<group>"; };
-		B67DAACA1C33D364008D2E7A /* MZTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTransition.m; sourceTree = "<group>"; };
-		B67DAACC1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationControllerAnimator.h; sourceTree = "<group>"; };
-		B67DAACD1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetPresentationControllerAnimator.m; sourceTree = "<group>"; };
-		B67DAACF1C33D396008D2E7A /* MZFormSheetPresentationControllerAnimatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationControllerAnimatorProtocol.h; sourceTree = "<group>"; };
 		B67DAAD11C33D59C008D2E7A /* ParksideMajorNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParksideMajorNames.swift; path = Model/ParksideMajorNames.swift; sourceTree = "<group>"; };
 		B67DAAD31C33DAF3008D2E7A /* Accounting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Accounting.pdf; path = PDFs/Accounting.pdf; sourceTree = "<group>"; };
 		B67DAAD51C33DAF3008D2E7A /* Biology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Biology.pdf; path = PDFs/Biology.pdf; sourceTree = "<group>"; };
@@ -151,6 +141,7 @@
 		B67DAB151C33E1A1008D2E7A /* GraphicDesign.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GraphicDesign.pdf; sourceTree = "<group>"; };
 		B67DAB171C33E1D0008D2E7A /* Sociology.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sociology.pdf; sourceTree = "<group>"; };
 		B67DAB191C346538008D2E7A /* Spanish.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Spanish.pdf; sourceTree = "<group>"; };
+		B6898FBF1C55FD95009A3D85 /* Our-Majors-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Our-Majors-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6A6DF141C51636200195056 /* Nav+StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Nav+StatusBar.swift"; path = "Views/Nav+StatusBar.swift"; sourceTree = "<group>"; };
 		B6F206561C33CD5D000595CD /* Our Majors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Our Majors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F206591C33CD5D000595CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +154,12 @@
 		B6F206751C33CD5D000595CD /* ParksideAdmissionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParksideAdmissionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F206791C33CD5D000595CD /* ParksideAdmissionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksideAdmissionsUITests.swift; sourceTree = "<group>"; };
 		B6F2067B1C33CD5D000595CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F5CBF71C55F25D003D7748 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6F5CBF91C55F26C003D7748 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B6F5CBFB1C55F27B003D7748 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B6F5CBFD1C55F291003D7748 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B6F5CBFF1C55F58A003D7748 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		CC22CD3E911D060F79B543B3 /* Pods-Our Majors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Our Majors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Our Majors/Pods-Our Majors.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +167,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32682EA9BA9D214BA04AEF97 /* Pods_ParksideAdmissions.framework in Frameworks */,
+				B6F5CBFE1C55F291003D7748 /* libsqlite3.tbd in Frameworks */,
+				B6F5CBFC1C55F27B003D7748 /* libz.tbd in Frameworks */,
+				B6F5CBFA1C55F26C003D7748 /* SystemConfiguration.framework in Frameworks */,
+				B6F5CBF81C55F25D003D7748 /* CoreData.framework in Frameworks */,
+				68B8B04CD0BA2FC1E897019E /* libPods-Our Majors.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,26 +192,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26ADDB21B320310E0722FE40 /* Frameworks */ = {
+		AE8583224E7401A6A4670758 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				17DE01A048B1829F5B047595 /* Pods_ParksideAdmissions.framework */,
+				B6F5CBFD1C55F291003D7748 /* libsqlite3.tbd */,
+				B6F5CBFB1C55F27B003D7748 /* libz.tbd */,
+				B6F5CBF91C55F26C003D7748 /* SystemConfiguration.framework */,
+				B6F5CBF71C55F25D003D7748 /* CoreData.framework */,
+				059C4C050D5ECA56D4A61839 /* libPods-Our Majors.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7F09C52F6FB185EE59649DBE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				162DF1346733902089B1A865 /* Pods-ParksideAdmissions.debug.xcconfig */,
-				36BDBD976DFF612BE17A40BF /* Pods-ParksideAdmissions.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		B62E5F971C33CF0E00C4D0D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B6F5CBFF1C55F58A003D7748 /* UIColorExtension.swift */,
 				B6A6DF141C51636200195056 /* Nav+StatusBar.swift */,
 				B661E6931C509C5500397311 /* AnimatingBanner.swift */,
 				B62E5F981C33CF1A00C4D0D1 /* CardView.swift */,
@@ -286,22 +283,6 @@
 			name = PDFs;
 			sourceTree = "<group>";
 		};
-		B67DAAD01C33D3E9008D2E7A /* 3rd Party */ = {
-			isa = PBXGroup;
-			children = (
-				B67DAAC21C33D2FE008D2E7A /* JTMaterialTransition.h */,
-				B67DAAC31C33D2FE008D2E7A /* JTMaterialTransition.m */,
-				B67DAAC61C33D34C008D2E7A /* MZFormSheetPresentationController.h */,
-				B67DAAC71C33D34C008D2E7A /* MZFormSheetPresentationController.m */,
-				B67DAAC91C33D364008D2E7A /* MZTransition.h */,
-				B67DAACA1C33D364008D2E7A /* MZTransition.m */,
-				B67DAACC1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.h */,
-				B67DAACD1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.m */,
-				B67DAACF1C33D396008D2E7A /* MZFormSheetPresentationControllerAnimatorProtocol.h */,
-			);
-			name = "3rd Party";
-			sourceTree = "<group>";
-		};
 		B6F2064D1C33CD5D000595CD = {
 			isa = PBXGroup;
 			children = (
@@ -309,8 +290,8 @@
 				B6F2066D1C33CD5D000595CD /* ParksideAdmissionsTests */,
 				B6F206781C33CD5D000595CD /* ParksideAdmissionsUITests */,
 				B6F206571C33CD5D000595CD /* Products */,
-				7F09C52F6FB185EE59649DBE /* Pods */,
-				26ADDB21B320310E0722FE40 /* Frameworks */,
+				F381C2D8D0A7B949AED5B772 /* Pods */,
+				AE8583224E7401A6A4670758 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -328,8 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F206591C33CD5D000595CD /* AppDelegate.swift */,
-				B67DAAC51C33D31B008D2E7A /* ParksideAdmissions-Bridging-Header.h */,
-				B67DAAD01C33D3E9008D2E7A /* 3rd Party */,
+				B6898FBF1C55FD95009A3D85 /* Our-Majors-Bridging-Header.h */,
 				B62E5F971C33CF0E00C4D0D1 /* Views */,
 				B6F206601C33CD5D000595CD /* Assets.xcassets */,
 				B62E5F951C33CEF200C4D0D1 /* Main.storyboard */,
@@ -360,6 +340,15 @@
 			path = ParksideAdmissionsUITests;
 			sourceTree = "<group>";
 		};
+		F381C2D8D0A7B949AED5B772 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27D376669940278902128870 /* Pods-Our Majors.debug.xcconfig */,
+				CC22CD3E911D060F79B543B3 /* Pods-Our Majors.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,12 +356,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F2067E1C33CD5D000595CD /* Build configuration list for PBXNativeTarget "Our Majors" */;
 			buildPhases = (
-				5354134351A6E2DD5D034C68 /* Check Pods Manifest.lock */,
+				66171EBCACEAFE385173EE8F /* Check Pods Manifest.lock */,
 				B6F206521C33CD5D000595CD /* Sources */,
 				B6F206531C33CD5D000595CD /* Frameworks */,
 				B6F206541C33CD5D000595CD /* Resources */,
-				DD4425970482C1DE45A73559 /* Embed Pods Frameworks */,
-				1A1EC9BC13A262A0FD71E4D8 /* Copy Pods Resources */,
+				48971B1CD1A5D225A4E980E2 /* Embed Pods Frameworks */,
+				D266AB99094B9E787F8353DB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -527,22 +516,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1A1EC9BC13A262A0FD71E4D8 /* Copy Pods Resources */ = {
+		48971B1CD1A5D225A4E980E2 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Our Majors/Pods-Our Majors-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5354134351A6E2DD5D034C68 /* Check Pods Manifest.lock */ = {
+		66171EBCACEAFE385173EE8F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -557,19 +546,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DD4425970482C1DE45A73559 /* Embed Pods Frameworks */ = {
+		D266AB99094B9E787F8353DB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParksideAdmissions/Pods-ParksideAdmissions-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Our Majors/Pods-Our Majors-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -582,21 +571,18 @@
 				B67DAAD21C33D59C008D2E7A /* ParksideMajorNames.swift in Sources */,
 				B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */,
 				B62E5FDF1C33CF6D00C4D0D1 /* Constants.swift in Sources */,
-				B67DAAC81C33D34C008D2E7A /* MZFormSheetPresentationController.m in Sources */,
 				B60C97961C54771B00EEBE0E /* AppFactoryWebViewController.swift in Sources */,
 				B6A6DF151C51636200195056 /* Nav+StatusBar.swift in Sources */,
 				B62E5FE01C33CF6D00C4D0D1 /* ParksideMajorColors.swift in Sources */,
+				B6F5CC001C55F58A003D7748 /* UIColorExtension.swift in Sources */,
 				B661E6941C509C5500397311 /* AnimatingBanner.swift in Sources */,
-				B67DAACE1C33D380008D2E7A /* MZFormSheetPresentationControllerAnimator.m in Sources */,
 				B62E5F9D1C33CF1A00C4D0D1 /* CardView.swift in Sources */,
 				B62E5FA11C33CF1A00C4D0D1 /* MKLayer.swift in Sources */,
 				B62E5FA81C33CF4200C4D0D1 /* MajorSelectViewController.swift in Sources */,
 				B62E5F9F1C33CF1A00C4D0D1 /* MKButton.swift in Sources */,
 				B6F2065A1C33CD5D000595CD /* AppDelegate.swift in Sources */,
-				B67DAAC41C33D2FE008D2E7A /* JTMaterialTransition.m in Sources */,
 				B60C97921C52E39400EEBE0E /* MyPreviewController.swift in Sources */,
 				B62E5FA01C33CF1A00C4D0D1 /* MKColor.swift in Sources */,
-				B67DAACB1C33D364008D2E7A /* MZTransition.m in Sources */,
 				B62E5F9E1C33CF1A00C4D0D1 /* MajorButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,7 +713,7 @@
 		};
 		B6F2067F1C33CD5D000595CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 162DF1346733902089B1A865 /* Pods-ParksideAdmissions.debug.xcconfig */;
+			baseConfigurationReference = 27D376669940278902128870 /* Pods-Our Majors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -736,10 +722,14 @@
 				INFOPLIST_FILE = ParksideAdmissions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ParksideAdmissions",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.ParksideAdmissions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ParksideAdmissions/ParksideAdmissions-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParksideAdmissions/Our-Majors-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -747,7 +737,7 @@
 		};
 		B6F206801C33CD5D000595CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36BDBD976DFF612BE17A40BF /* Pods-ParksideAdmissions.release.xcconfig */;
+			baseConfigurationReference = CC22CD3E911D060F79B543B3 /* Pods-Our Majors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -756,10 +746,14 @@
 				INFOPLIST_FILE = ParksideAdmissions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ParksideAdmissions",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uwp.ParksideAdmissions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ParksideAdmissions/ParksideAdmissions-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParksideAdmissions/Our-Majors-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

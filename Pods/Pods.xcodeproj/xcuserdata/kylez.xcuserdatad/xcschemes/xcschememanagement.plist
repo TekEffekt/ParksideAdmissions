@@ -24,12 +24,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ParksideAdmissions.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>UIColor_Hex_Swift.xcscheme</key>
+		<key>Pods-Our Majors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14DBCD99409E7622F00ED4D041FF5421</key>
+		<key>0D990E44D779E7CA633F5A36D3436AFA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>17C7ECB33F2F2B5D2CC59B666FCDF473</key>
+		<key>1DAC2FF166EBB39D93C76C245CCD170C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>540D639ECCD13B6211E7C9E526447327</key>
+		<key>34C636663DE36DFC81D882A527414989</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5909EBD0F72D9C0AE9725BC886282A9D</key>
+		<key>34E80B8ECC39F4B0064A68EAD8C57C25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F619E87BFE638E6588E80CA42CAFB77E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FFABAFE9408FF95CFC8B3C3770D56837</key>
+		<key>67A6E53C5EB385167BAE5167CABAF93D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

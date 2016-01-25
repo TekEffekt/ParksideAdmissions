@@ -13,11 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-//        self.window!.tintColor = UIColor.whiteColor()
-                
+
+        GAI.sharedInstance().trackUncaughtExceptions = true
+        GAI.sharedInstance().dispatchInterval = 20
+        GAI.sharedInstance().trackerWithTrackingId("UA-72832202-1")
+        GAI.sharedInstance().logger.logLevel = GAILogLevel.Verbose
+        
         return true
     }
 

@@ -36,12 +36,22 @@ class AppFactoryWebViewController: UIViewController {
             navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
         }
         oldNavColor = navigationController!.navigationBar.barTintColor
+        
+        startScreenTracking()
     }
     
     override func viewDidAppear(animated: Bool) {
         if fromPDF {
             navigationController!.navigationBar.barTintColor = oldNavColor
         }
+    }
+    
+    private func startScreenTracking() {
+        let tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: "Appfactory WebView Screen")
+        
+        let builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
     }
     
 }

@@ -11,7 +11,7 @@ import UIKit
 import QuickLook
 import MessageUI
 
-class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate, UIGestureRecognizerDelegate
+class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate, UIGestureRecognizerDelegate, UIPrintInteractionControllerDelegate
 {
     // MARK: Properties
     var masterController:MajorSelectViewController?
@@ -58,6 +58,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         view.addSubview(banner!)
         
         setupBannerShadow()
+        startScreenTracking()
     }
     
     private func setupBannerShadow() {
@@ -91,8 +92,20 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         container.addGestureRecognizer(tap)
     }
     
+    private func startScreenTracking() {
+        let tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: "PDF Screen")
+        
+        let builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
+    }
+    
     // MARK: Banner Clicked
     func bannerTapped() {
+        var tracker = GAI.sharedInstance().defaultTracker
+        
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Banner Tapped", action: "From PDF Screen", label: "", value: nil).build() as [NSObject : AnyObject])
+        
         performSegueWithIdentifier("otherPresentWebView", sender: self)
     }
     
@@ -111,7 +124,6 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     func previewController(controller: QLPreviewController, previewItemAtIndex index: Int) -> QLPreviewItem
     {
         let path = NSBundle.mainBundle().pathForResource(MajorsNames.NAMES[index], ofType: "pdf")
-        pdfIndex = index
         
         return NSURL.fileURLWithPath(path!)
     }
@@ -120,15 +132,15 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     @IBAction func backButtonPressed(sender: UIBarButtonItem)
     {
         self.dismissViewControllerAnimated(true) { () -> Void in
-            print("Removed")
             //self.banner!.removeFromSuperview()
             self.masterController!.removeTemp()
             self.masterController!.view.addSubview(self.banner!)
+            self.masterController!.startScreenTracking()
         }
     }
     
     @IBAction func emailButtonPressed(sender: AnyObject) {
-        let name = MajorsNames.NAMES[pdfIndex!]
+        let name = MajorsNames.NAMES[previewController!.currentPreviewItemIndex]
         
         let emailTitle = "Major PDF"
         let messageBody = "\(name)"
@@ -142,15 +154,29 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
             let path = NSBundle.mainBundle().pathForResource(name, ofType: "pdf")
             let data:NSData = NSData.dataWithContentsOfMappedFile(path!) as! NSData
             mc.addAttachmentData(data, mimeType: "image/pdf", fileName: "\(name).pdf")
+            mc.mailComposeDelegate = self
             
             self.presentViewController(mc, animated: true, completion: nil)
-
         }
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController,
+        didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+            // Check the result or perform other tasks.
+            if result == MFMailComposeResultSent {
+                let tracker = GAI.sharedInstance().defaultTracker
+                
+                tracker.send(GAIDictionaryBuilder.createEventWithCategory("Email", action: "\(MajorsNames.NAMES[previewController!.currentPreviewItemIndex])", label: "" , value: nil).build() as [NSObject : AnyObject])
+            }
+            
+            // Dismiss the mail compose view controller.
+            controller.dismissViewControllerAnimated(true, completion: nil)
     }
         
     @IBAction func printButtonPressed(sender: AnyObject) {
         let printController = UIPrintInteractionController.sharedPrintController()
-        let pdfPath = MajorsNames.NAMES[pdfIndex!]
+        printController.delegate = self
+        let pdfPath = MajorsNames.NAMES[previewController!.currentPreviewItemIndex]
         
         let path = NSBundle.mainBundle().pathForResource(pdfPath, ofType: "pdf")
         let data = NSData.dataWithContentsOfMappedFile(path!) as! NSData
@@ -169,10 +195,10 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         }
     }
     
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?)
-    {
-
-        self.dismissViewControllerAnimated(true, completion: nil)
+    func printInteractionControllerWillStartJob(printInteractionController: UIPrintInteractionController) {
+        let tracker = GAI.sharedInstance().defaultTracker
+        
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Print", action: "\(MajorsNames.NAMES[previewController!.currentPreviewItemIndex])", label:"" , value: nil).build() as [NSObject : AnyObject])
     }
     
 }

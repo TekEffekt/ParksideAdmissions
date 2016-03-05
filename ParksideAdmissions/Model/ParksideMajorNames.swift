@@ -10,7 +10,7 @@ import Foundation
 
 struct MajorsNames {
     static let NAMES:[String] = ["Accounting","AppliedHealthSciences","Art",
-        "Biology","BuisnessManagement","Chemistry","Communication","ComputerScience",
+        "Biology","BusinessManagement","Chemistry","Communication","ComputerScience",
     "CriminalJustice","Economics","ElementaryEducation","Engineering","English",
     "EnvironmentalStudies","ExerciseScience","Geography","Geosciences","GraphicDesign",
     "HealthInfoManagement","History","InternationalStudies","LiberalStudies",
@@ -19,9 +19,9 @@ struct MajorsNames {
     "SustainableManagement","TheatreArts"]
     
     static let DISPLAY_NAMES:[String] = ["Accounting","Applied Health Sciences","Art",
-        "Biology","Buisness Management","Chemistry","Communication","Computer Science",
+        "Biology","Business Management","Chemistry","Communication","Computer Science",
         "Criminal Justice","Economics","Elementary Education","Engineering","English",
-        "Enviromental Studies","Exercise Science","Geography","Geosciences","Graphic Design",
+        "Environmental Studies","Exercise Science","Geography","Geosciences","Graphic Design",
         "Health Info Mgmt.","History","International Studies","Liberal Studies",
         "Management Info Systems","Marketing","Mathematics","Music","Nursing","Philosophy",
         "Physics","Political Science","Psychology","Sociology","Spanish","Sports Mgmt.",

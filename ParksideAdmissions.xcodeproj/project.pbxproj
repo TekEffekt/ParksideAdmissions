@@ -47,7 +47,7 @@
 		B67DAB011C33DAF3008D2E7A /* SustainableManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAE91C33DAF3008D2E7A /* SustainableManagement.pdf */; };
 		B67DAB021C33DAF3008D2E7A /* TheatreArts.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAEA1C33DAF3008D2E7A /* TheatreArts.pdf */; };
 		B67DAB041C33DD38008D2E7A /* Art.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB031C33DD38008D2E7A /* Art.pdf */; };
-		B67DAB061C33DED9008D2E7A /* BuisnessManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB051C33DED9008D2E7A /* BuisnessManagement.pdf */; };
+		B67DAB061C33DED9008D2E7A /* BusinessManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB051C33DED9008D2E7A /* BusinessManagement.pdf */; };
 		B67DAB081C33DEFF008D2E7A /* Economics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB071C33DEFF008D2E7A /* Economics.pdf */; };
 		B67DAB0A1C33DF2B008D2E7A /* Marketing.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB091C33DF2B008D2E7A /* Marketing.pdf */; };
 		B67DAB0C1C33DF55008D2E7A /* LiberalStudies.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAB0B1C33DF55008D2E7A /* LiberalStudies.pdf */; };
@@ -130,7 +130,7 @@
 		B67DAAE91C33DAF3008D2E7A /* SustainableManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SustainableManagement.pdf; path = PDFs/SustainableManagement.pdf; sourceTree = "<group>"; };
 		B67DAAEA1C33DAF3008D2E7A /* TheatreArts.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TheatreArts.pdf; path = PDFs/TheatreArts.pdf; sourceTree = "<group>"; };
 		B67DAB031C33DD38008D2E7A /* Art.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Art.pdf; path = PDFs/Art.pdf; sourceTree = "<group>"; };
-		B67DAB051C33DED9008D2E7A /* BuisnessManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BuisnessManagement.pdf; sourceTree = "<group>"; };
+		B67DAB051C33DED9008D2E7A /* BusinessManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = BusinessManagement.pdf; sourceTree = "<group>"; };
 		B67DAB071C33DEFF008D2E7A /* Economics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Economics.pdf; sourceTree = "<group>"; };
 		B67DAB091C33DF2B008D2E7A /* Marketing.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Marketing.pdf; sourceTree = "<group>"; };
 		B67DAB0B1C33DF55008D2E7A /* LiberalStudies.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LiberalStudies.pdf; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 				B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */,
 				B67DAB031C33DD38008D2E7A /* Art.pdf */,
 				B67DAAD51C33DAF3008D2E7A /* Biology.pdf */,
-				B67DAB051C33DED9008D2E7A /* BuisnessManagement.pdf */,
+				B67DAB051C33DED9008D2E7A /* BusinessManagement.pdf */,
 				B67DAAD61C33DAF3008D2E7A /* Chemistry.pdf */,
 				B67DAAD71C33DAF3008D2E7A /* Communication.pdf */,
 				B67DAAD81C33DAF3008D2E7A /* ComputerScience.pdf */,
@@ -481,7 +481,7 @@
 				B67DAAFA1C33DAF3008D2E7A /* Music.pdf in Resources */,
 				B67DAAF21C33DAF3008D2E7A /* Engineering.pdf in Resources */,
 				B67DAAF41C33DAF3008D2E7A /* EnvironmentalStudies.pdf in Resources */,
-				B67DAB061C33DED9008D2E7A /* BuisnessManagement.pdf in Resources */,
+				B67DAB061C33DED9008D2E7A /* BusinessManagement.pdf in Resources */,
 				B67DAAF91C33DAF3008D2E7A /* Mathematics.pdf in Resources */,
 				B67DAAF01C33DAF3008D2E7A /* ComputerScience.pdf in Resources */,
 				B67DAAF31C33DAF3008D2E7A /* English.pdf in Resources */,

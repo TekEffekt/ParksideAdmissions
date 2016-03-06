@@ -8,7 +8,7 @@
 //  This file is used for the inflating bubble transition.
 
 import UIKit
-import UIColor_Hex_Swift
+
 
 enum MajorColors {
     case FirstColor

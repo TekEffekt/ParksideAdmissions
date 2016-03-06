@@ -7,4 +7,5 @@ target 'Our Majors' do
 pod 'JTMaterialTransition'
 pod 'GoogleAnalytics'
 pod 'MZFormSheetPresentationController', '~> 1.1'
+pod 'UIColor_Hex_Swift', '~> 1.8'
 end

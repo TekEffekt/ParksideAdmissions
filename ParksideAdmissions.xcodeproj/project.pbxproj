@@ -10,7 +10,6 @@
 		68B8B04CD0BA2FC1E897019E /* libPods-Our Majors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 059C4C050D5ECA56D4A61839 /* libPods-Our Majors.a */; };
 		B60A173F1C346C1D00A5BB81 /* HealthInfoManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */; };
 		B60A17411C346C3700A5BB81 /* AppliedHealthSciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */; };
-		B60C97921C52E39400EEBE0E /* MyPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97911C52E39400EEBE0E /* MyPreviewController.swift */; };
 		B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97931C52F72100EEBE0E /* PDFViewController.swift */; };
 		B60C97961C54771B00EEBE0E /* AppFactoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */; };
 		B62E5F961C33CEF200C4D0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E5F951C33CEF200C4D0D1 /* Main.storyboard */; };
@@ -93,7 +92,6 @@
 		27D376669940278902128870 /* Pods-Our Majors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Our Majors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Our Majors/Pods-Our Majors.debug.xcconfig"; sourceTree = "<group>"; };
 		B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HealthInfoManagement.pdf; sourceTree = "<group>"; };
 		B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AppliedHealthSciences.pdf; sourceTree = "<group>"; };
-		B60C97911C52E39400EEBE0E /* MyPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPreviewController.swift; sourceTree = "<group>"; };
 		B60C97931C52F72100EEBE0E /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFactoryWebViewController.swift; path = "View Controllers/AppFactoryWebViewController.swift"; sourceTree = "<group>"; };
 		B62E5F951C33CEF200C4D0D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -225,7 +223,6 @@
 				B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */,
 				B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */,
 				B60C97931C52F72100EEBE0E /* PDFViewController.swift */,
-				B60C97911C52E39400EEBE0E /* MyPreviewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -420,7 +417,7 @@
 				TargetAttributes = {
 					B6F206551C33CD5D000595CD = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 9463AL9REH;
+						DevelopmentTeam = 2T9JP2ZYVK;
 					};
 					B6F206691C33CD5D000595CD = {
 						CreatedOnToolsVersion = 7.2;
@@ -581,7 +578,6 @@
 				B62E5FA81C33CF4200C4D0D1 /* MajorSelectViewController.swift in Sources */,
 				B62E5F9F1C33CF1A00C4D0D1 /* MKButton.swift in Sources */,
 				B6F2065A1C33CD5D000595CD /* AppDelegate.swift in Sources */,
-				B60C97921C52E39400EEBE0E /* MyPreviewController.swift in Sources */,
 				B62E5FA01C33CF1A00C4D0D1 /* MKColor.swift in Sources */,
 				B62E5F9E1C33CF1A00C4D0D1 /* MajorButtonCell.swift in Sources */,
 			);

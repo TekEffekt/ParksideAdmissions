@@ -37,8 +37,7 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         setupBannerTapGesture()
     }
     
-    override func viewWillAppear(animated: Bool)
-    {
+    override func viewWillAppear(animated: Bool) {
         self.automaticallyAdjustsScrollViewInsets = false
         
         setupBannerShadow()

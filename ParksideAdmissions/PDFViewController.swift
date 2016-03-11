@@ -11,18 +11,17 @@ import UIKit
 import QuickLook
 import MessageUI
 
-class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate, UIGestureRecognizerDelegate, UIPrintInteractionControllerDelegate
-{
+class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate, UIGestureRecognizerDelegate, UIPrintInteractionControllerDelegate {
     // MARK: Properties
-    var masterController:MajorSelectViewController?
+    weak var masterController:MajorSelectViewController?
     var displayedPDF = false
     var pdfIndex:Int?
-    var previewController:MyPreviewController?
+    weak var previewController: QLPreviewController?
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var otherSpace: UIView!
     var oldBackgroundColor:UIColor?
     
-    var banner: AnimatingBanner?
+    weak var banner: AnimatingBanner?
     @IBOutlet weak var container: UIView!
     
     // MARK: Initialization
@@ -36,20 +35,16 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         setupBannerTapGesture()
     }
     
-    override func viewWillAppear(animated: Bool)
-    {
-        if !self.displayedPDF
-        {
-            previewController = MyPreviewController()
+    override func viewWillAppear(animated: Bool) {
+        if !self.displayedPDF {
+            previewController = QLPreviewController()
             previewController!.dataSource = self
             previewController!.delegate = self
             previewController!.view.backgroundColor = self.view.backgroundColor
             previewController!.currentPreviewItemIndex = pdfIndex!
-  
             previewController!.view.frame = CGRectMake(0, 0, self.otherSpace.frame.width, self.otherSpace.frame.height)
 
             self.otherSpace.addSubview(previewController!.view)
-            
             self.displayedPDF = true
         }
         
@@ -100,7 +95,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         tracker.send(builder.build() as [NSObject : AnyObject])
     }
     
-    // MARK: Banner Clicked
+    // MARK: Banner
     func bannerTapped() {
         var tracker = GAI.sharedInstance().defaultTracker
         
@@ -109,29 +104,20 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         performSegueWithIdentifier("otherPresentWebView", sender: self)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destination = segue.destinationViewController as! AppFactoryWebViewController
-        destination.fromPDF = true
-        
-        destination.backColor = view.tintColor
-    }
-    
     // MARK: QL Datasource
     func numberOfPreviewItemsInPreviewController(controller: QLPreviewController) -> Int {
         return MajorsNames.NAMES.count
     }
     
-    func previewController(controller: QLPreviewController, previewItemAtIndex index: Int) -> QLPreviewItem
-    {
+    func previewController(controller: QLPreviewController, previewItemAtIndex index: Int) -> QLPreviewItem {
         let path = NSBundle.mainBundle().pathForResource(MajorsNames.NAMES[index], ofType: "pdf")
         
         return NSURL.fileURLWithPath(path!)
     }
             
-    // MARK: User Interaction
-    @IBAction func backButtonPressed(sender: UIBarButtonItem)
-    {
-        self.dismissViewControllerAnimated(true) { () -> Void in
+    // MARK: Navigation
+    @IBAction func backButtonPressed(sender: UIBarButtonItem) {
+       dismissViewControllerAnimated(true) { () -> Void in
             //self.banner!.removeFromSuperview()
             self.masterController!.removeTemp()
             self.masterController!.view.addSubview(self.banner!)
@@ -139,6 +125,13 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destination = segue.destinationViewController as! AppFactoryWebViewController
+        destination.fromPDF = true
+        destination.backColor = view.tintColor
+    }
+    
+    // MARK: Emailing
     @IBAction func emailButtonPressed(sender: AnyObject) {
         let name = MajorsNames.NAMES[previewController!.currentPreviewItemIndex]
         
@@ -172,7 +165,8 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
             // Dismiss the mail compose view controller.
             controller.dismissViewControllerAnimated(true, completion: nil)
     }
-        
+    
+    // MARK: Printing
     @IBAction func printButtonPressed(sender: AnyObject) {
         let printController = UIPrintInteractionController.sharedPrintController()
         printController.delegate = self

@@ -15,26 +15,6 @@ class MajorButtonCell: UICollectionViewCell, UIGestureRecognizerDelegate
     @IBOutlet weak var majorIcon: UIImageView!
     @IBOutlet weak var majorText: UILabel!
     
-//    override func drawRect(rect: CGRect)
-//    {
-//        button.removeFromSuperview()
-//        self.button = MKButton(frame: CGRectMake(0, 0, self.frame.width, self.frame.height))
-//        self.layer.masksToBounds = false
-//        let randomColorI = index! % Constants.majorColors.count
-//        button.backgroundColor = Constants.majorColors[randomColorI]
-//        button.setTitle(Constants.majorNames[index!], forState: UIControlState.Normal)
-//        button.titleLabel!.font = button.titleLabel!.font.fontWithSize(30)
-//        button.addTarget(self, action: "buttonPressed:", forControlEvents: UIControlEvents.TouchUpInside)
-//        button.titleLabel!.numberOfLines = 2
-//        button.titleLabel!.textAlignment = NSTextAlignment.Center
-//        
-//        if let _ = button.superview
-//        {} else
-//        {
-//            self.addSubview(button)
-//        }
-//    }
-    
     override func drawRect(rect: CGRect)
     {
         self.majorIcon.image = UIImage(named: MajorsNames.NAMES[index!])
@@ -45,9 +25,7 @@ class MajorButtonCell: UICollectionViewCell, UIGestureRecognizerDelegate
         self.addGestureRecognizer(tapGeture)
     }
     
-    func buttonPressed()
-    {
-        print("Pressed at! \(index)")
+    func buttonPressed() {
         self.controller!.buttonPressed(withCell: self)
     }
     

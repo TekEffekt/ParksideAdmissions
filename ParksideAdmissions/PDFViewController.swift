@@ -12,17 +12,21 @@ import QuickLook
 import MessageUI
 
 class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate, UIGestureRecognizerDelegate, UIPrintInteractionControllerDelegate {
+    
     // MARK: Properties
     weak var masterController:MajorSelectViewController?
     var displayedPDF = false
     var pdfIndex:Int?
-    weak var previewController: QLPreviewController?
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var otherSpace: UIView!
     var oldBackgroundColor:UIColor?
     
     weak var banner: AnimatingBanner?
     @IBOutlet weak var container: UIView!
+    
+    deinit {
+        PDFPreviewController.previewController.view.removeFromSuperview()
+    }
     
     // MARK: Initialization
     override func viewDidLoad() {
@@ -33,21 +37,21 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         self.navBar.addSubview(statusBar)
         
         setupBannerTapGesture()
+        
+        if !self.displayedPDF {
+            weak var weakSelf = self
+            PDFPreviewController.previewController.dataSource = weakSelf
+            PDFPreviewController.previewController.delegate = weakSelf
+            PDFPreviewController.previewController.view.backgroundColor = self.view.backgroundColor
+            PDFPreviewController.previewController.currentPreviewItemIndex = pdfIndex!
+            PDFPreviewController.previewController.view.frame = CGRectMake(0, 0, self.otherSpace.frame.width, self.otherSpace.frame.height)
+            
+            self.otherSpace.addSubview(PDFPreviewController.previewController.view)
+            self.displayedPDF = true
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
-        if !self.displayedPDF {
-            previewController = QLPreviewController()
-            previewController!.dataSource = self
-            previewController!.delegate = self
-            previewController!.view.backgroundColor = self.view.backgroundColor
-            previewController!.currentPreviewItemIndex = pdfIndex!
-            previewController!.view.frame = CGRectMake(0, 0, self.otherSpace.frame.width, self.otherSpace.frame.height)
-
-            self.otherSpace.addSubview(previewController!.view)
-            self.displayedPDF = true
-        }
-        
         navigationController!.navigationBarHidden = true
         
         view.addSubview(banner!)
@@ -118,7 +122,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     // MARK: Navigation
     @IBAction func backButtonPressed(sender: UIBarButtonItem) {
        dismissViewControllerAnimated(true) { () -> Void in
-            //self.banner!.removeFromSuperview()
+            self.banner!.removeFromSuperview()
             self.masterController!.removeTemp()
             self.masterController!.view.addSubview(self.banner!)
             self.masterController!.startScreenTracking()
@@ -133,7 +137,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     
     // MARK: Emailing
     @IBAction func emailButtonPressed(sender: AnyObject) {
-        let name = MajorsNames.NAMES[previewController!.currentPreviewItemIndex]
+        let name = MajorsNames.NAMES[PDFPreviewController.previewController.currentPreviewItemIndex]
         
         let emailTitle = "Major PDF"
         let messageBody = "\(name)"
@@ -155,11 +159,13 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     
     func mailComposeController(controller: MFMailComposeViewController,
         didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+            let pdfName = MajorsNames.NAMES[PDFPreviewController.previewController.currentPreviewItemIndex]
+            
             // Check the result or perform other tasks.
             if result == MFMailComposeResultSent {
                 let tracker = GAI.sharedInstance().defaultTracker
                 
-                tracker.send(GAIDictionaryBuilder.createEventWithCategory("Email", action: "\(MajorsNames.NAMES[previewController!.currentPreviewItemIndex])", label: "" , value: nil).build() as [NSObject : AnyObject])
+                tracker.send(GAIDictionaryBuilder.createEventWithCategory("Email", action: "\(pdfName)", label: "" , value: nil).build() as [NSObject : AnyObject])
             }
             
             // Dismiss the mail compose view controller.
@@ -170,7 +176,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     @IBAction func printButtonPressed(sender: AnyObject) {
         let printController = UIPrintInteractionController.sharedPrintController()
         printController.delegate = self
-        let pdfPath = MajorsNames.NAMES[previewController!.currentPreviewItemIndex]
+        let pdfPath = MajorsNames.NAMES[PDFPreviewController.previewController.currentPreviewItemIndex]
         
         let path = NSBundle.mainBundle().pathForResource(pdfPath, ofType: "pdf")
         let data = NSData.dataWithContentsOfMappedFile(path!) as! NSData
@@ -192,7 +198,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     func printInteractionControllerWillStartJob(printInteractionController: UIPrintInteractionController) {
         let tracker = GAI.sharedInstance().defaultTracker
         
-        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Print", action: "\(MajorsNames.NAMES[previewController!.currentPreviewItemIndex])", label:"" , value: nil).build() as [NSObject : AnyObject])
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Print", action: "\(MajorsNames.NAMES[PDFPreviewController.previewController.currentPreviewItemIndex])", label:"" , value: nil).build() as [NSObject : AnyObject])
     }
     
 }

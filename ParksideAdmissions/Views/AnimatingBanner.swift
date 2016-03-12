@@ -23,8 +23,6 @@ class AnimatingBanner: UIView {
         gear = UIImageView()
         mask = UIView()
         super.init(frame: frame)
-        
-        
         text.image = UIImage(named: "Text")
         gear.image = UIImage(named: "Gear")
         

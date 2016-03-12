@@ -119,13 +119,11 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     // MARK: Custom Transition
-    func createTransition(withView view:UIView)
-    {
+    func createTransition(withView view:UIView) {
         self.transition = JTMaterialTransition(animatedView: view)
     }
     
-    func buttonPressed(withCell cell:MajorButtonCell)
-    {
+    func buttonPressed(withCell cell:MajorButtonCell) {
         self.prepareTransition(withCell: cell);
         self.presentPdf(withSelectedCell: cell)
     }
@@ -153,6 +151,7 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         nav.view.backgroundColor = GetColors.getList()[randomColorI]
         pdfController.masterController = self
         pdfController.banner = self.banner
+        print("What")
         self.presentViewController(nav, animated: true, completion: nil)
     }
     

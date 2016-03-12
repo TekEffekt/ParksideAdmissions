@@ -10,6 +10,7 @@
 		68B8B04CD0BA2FC1E897019E /* libPods-Our Majors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 059C4C050D5ECA56D4A61839 /* libPods-Our Majors.a */; };
 		B60A173F1C346C1D00A5BB81 /* HealthInfoManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */; };
 		B60A17411C346C3700A5BB81 /* AppliedHealthSciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */; };
+		B60AEA391C938B4D00DE8C04 /* PDFPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AEA381C938B4D00DE8C04 /* PDFPreviewController.swift */; };
 		B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97931C52F72100EEBE0E /* PDFViewController.swift */; };
 		B60C97961C54771B00EEBE0E /* AppFactoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */; };
 		B62E5F961C33CEF200C4D0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E5F951C33CEF200C4D0D1 /* Main.storyboard */; };
@@ -92,6 +93,7 @@
 		27D376669940278902128870 /* Pods-Our Majors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Our Majors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Our Majors/Pods-Our Majors.debug.xcconfig"; sourceTree = "<group>"; };
 		B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HealthInfoManagement.pdf; sourceTree = "<group>"; };
 		B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AppliedHealthSciences.pdf; sourceTree = "<group>"; };
+		B60AEA381C938B4D00DE8C04 /* PDFPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFPreviewController.swift; path = "View Controllers/PDFPreviewController.swift"; sourceTree = "<group>"; };
 		B60C97931C52F72100EEBE0E /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFactoryWebViewController.swift; path = "View Controllers/AppFactoryWebViewController.swift"; sourceTree = "<group>"; };
 		B62E5F951C33CEF200C4D0D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */,
 				B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */,
 				B60C97931C52F72100EEBE0E /* PDFViewController.swift */,
+				B60AEA381C938B4D00DE8C04 /* PDFPreviewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				B62E5FDF1C33CF6D00C4D0D1 /* Constants.swift in Sources */,
 				B60C97961C54771B00EEBE0E /* AppFactoryWebViewController.swift in Sources */,
 				B6A6DF151C51636200195056 /* Nav+StatusBar.swift in Sources */,
+				B60AEA391C938B4D00DE8C04 /* PDFPreviewController.swift in Sources */,
 				B62E5FE01C33CF6D00C4D0D1 /* ParksideMajorColors.swift in Sources */,
 				B6F5CC001C55F58A003D7748 /* UIColorExtension.swift in Sources */,
 				B661E6941C509C5500397311 /* AnimatingBanner.swift in Sources */,
@@ -715,6 +719,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = ParksideAdmissions/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

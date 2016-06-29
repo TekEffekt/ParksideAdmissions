@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DE0B7A1FA96FE383730E191F'
+               BlueprintIdentifier = '50D1E003FE7D7E79CBE6CF0E'
                BlueprintName = 'JTMaterialTransition'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libJTMaterialTransition.a'>
+               BuildableName = 'JTMaterialTransition.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

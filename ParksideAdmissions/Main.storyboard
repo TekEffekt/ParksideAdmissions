@@ -1,11 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xKo-YM-zFX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xKo-YM-zFX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
+        <!--Screensaver Controller-->
+        <scene sceneID="YGz-0q-JGV">
+            <objects>
+                <viewController storyboardIdentifier="Screensaver" automaticallyAdjustsScrollViewInsets="NO" id="6UI-G4-bWV" customClass="ScreensaverController" customModule="Our_Majors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ByR-Op-Fre"/>
+                        <viewControllerLayoutGuide type="bottom" id="qp9-e2-FU6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GHG-IS-3Jc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3EZ-2g-1pZ">
+                                <rect key="frame" x="0.0" y="-100" width="600" height="700"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mh2-hi-RQ6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="tap to unlock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTG-YE-Hej">
+                                        <rect key="frame" x="151" y="51" width="309" height="56"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="QTG-YE-Hej" firstAttribute="centerX" secondItem="mh2-hi-RQ6" secondAttribute="centerX" id="bVY-Ui-n7q"/>
+                                    <constraint firstItem="QTG-YE-Hej" firstAttribute="top" secondItem="mh2-hi-RQ6" secondAttribute="top" constant="50" id="lcy-7E-YYv"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fG7-5F-kZB" appends="YES" id="Ivq-7c-m1E"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="mh2-hi-RQ6" secondAttribute="bottom" id="0f5-mi-lVE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mh2-hi-RQ6" secondAttribute="trailing" constant="-20" id="5uz-EY-jCa"/>
+                            <constraint firstItem="3EZ-2g-1pZ" firstAttribute="top" secondItem="GHG-IS-3Jc" secondAttribute="topMargin" constant="-100" id="CjH-XV-Lkl"/>
+                            <constraint firstItem="qp9-e2-FU6" firstAttribute="top" secondItem="3EZ-2g-1pZ" secondAttribute="bottom" id="d36-Yd-41p"/>
+                            <constraint firstItem="mh2-hi-RQ6" firstAttribute="top" secondItem="GHG-IS-3Jc" secondAttribute="topMargin" id="hHh-hR-lcZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3EZ-2g-1pZ" secondAttribute="trailing" constant="-20" id="kVo-5W-ijL"/>
+                            <constraint firstItem="3EZ-2g-1pZ" firstAttribute="leading" secondItem="GHG-IS-3Jc" secondAttribute="leadingMargin" constant="-20" id="qnE-Ym-Lac"/>
+                            <constraint firstItem="mh2-hi-RQ6" firstAttribute="leading" secondItem="GHG-IS-3Jc" secondAttribute="leadingMargin" constant="-20" id="wou-ga-V4F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="3EZ-2g-1pZ" id="Zrq-i9-vdO"/>
+                        <outlet property="unlockLabel" destination="QTG-YE-Hej" id="YXg-kX-lPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUQ-Yr-4dN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fG7-5F-kZB">
+                    <connections>
+                        <action selector="screenTapped:" destination="6UI-G4-bWV" id="fmm-gf-z7y"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1192" y="-378"/>
+        </scene>
         <!--Choose A Major-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -106,6 +169,37 @@
             </objects>
             <point key="canvasLocation" x="1192" y="337"/>
         </scene>
+        <!--Test-->
+        <scene sceneID="d6E-5J-3ag">
+            <objects>
+                <viewController storyboardIdentifier="pdfController2" id="2ly-kt-CgZ" customClass="Test" customModule="Our_Majors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6wi-FM-95F"/>
+                        <viewControllerLayoutGuide type="bottom" id="vis-Sv-o8i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qge-FU-RnS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uz-TT-h1a">
+                                <rect key="frame" x="173" y="259" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backAction:" destination="2ly-kt-CgZ" eventType="touchUpInside" id="E7I-Vm-M3g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nEg-3W-bZj"/>
+                    <connections>
+                        <outlet property="back" destination="0uz-TT-h1a" id="LR0-Z4-Exc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BcQ-Qr-cOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266" y="-427"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="NmR-0x-LjM">
             <objects>
@@ -195,6 +289,7 @@
                         <outlet property="container" destination="cvd-cA-4Cs" id="8sx-g3-A8E"/>
                         <outlet property="navBar" destination="EVo-Qd-4ua" id="K6V-RZ-HeA"/>
                         <outlet property="otherSpace" destination="5fh-Us-JiO" id="m4p-Fp-tIz"/>
+                        <outlet property="printItem" destination="fZM-pn-8Rj" id="HPS-ao-IwE"/>
                         <segue destination="7pm-yO-wS1" kind="show" identifier="otherPresentWebView" id="oZT-th-rNx"/>
                     </connections>
                 </viewController>
@@ -258,7 +353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4G6-zY-DwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="337"/>
+            <point key="canvasLocation" x="422" y="337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xct-O2-6o3">

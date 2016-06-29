@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68B8B04CD0BA2FC1E897019E /* libPods-Our Majors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 059C4C050D5ECA56D4A61839 /* libPods-Our Majors.a */; };
+		2066AAD516CA6B7258733264 /* Pods_Our_Majors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADD6E785190C6F320AC785D /* Pods_Our_Majors.framework */; };
 		B60A173F1C346C1D00A5BB81 /* HealthInfoManagement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */; };
 		B60A17411C346C3700A5BB81 /* AppliedHealthSciences.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */; };
 		B60AEA391C938B4D00DE8C04 /* PDFPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AEA381C938B4D00DE8C04 /* PDFPreviewController.swift */; };
+		B60AEA411C93D4AF00DE8C04 /* Our_MajorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AEA401C93D4AF00DE8C04 /* Our_MajorsUITests.swift */; };
+		B60AEA491C94072300DE8C04 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60AEA481C94072300DE8C04 /* Test.swift */; };
 		B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97931C52F72100EEBE0E /* PDFViewController.swift */; };
 		B60C97961C54771B00EEBE0E /* AppFactoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */; };
 		B62E5F961C33CEF200C4D0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62E5F951C33CEF200C4D0D1 /* Main.storyboard */; };
@@ -22,6 +24,10 @@
 		B62E5FA81C33CF4200C4D0D1 /* MajorSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */; };
 		B62E5FDF1C33CF6D00C4D0D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FDD1C33CF6D00C4D0D1 /* Constants.swift */; };
 		B62E5FE01C33CF6D00C4D0D1 /* ParksideMajorColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E5FDE1C33CF6D00C4D0D1 /* ParksideMajorColors.swift */; };
+		B63C9B391D22E1CA00116486 /* ScreensaverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C9B381D22E1CA00116486 /* ScreensaverController.swift */; };
+		B63C9B3B1D2305D200116486 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C9B3A1D2305D200116486 /* BaseViewController.swift */; };
+		B63C9B3D1D2307D500116486 /* TimerUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C9B3C1D2307D500116486 /* TimerUIApplication.swift */; };
+		B63C9B3F1D2307EC00116486 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C9B3E1D2307EC00116486 /* main.swift */; };
 		B661E6941C509C5500397311 /* AnimatingBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661E6931C509C5500397311 /* AnimatingBanner.swift */; };
 		B67DAAD21C33D59C008D2E7A /* ParksideMajorNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67DAAD11C33D59C008D2E7A /* ParksideMajorNames.swift */; };
 		B67DAAEB1C33DAF3008D2E7A /* Accounting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B67DAAD31C33DAF3008D2E7A /* Accounting.pdf */; };
@@ -72,6 +78,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B60AEA431C93D4AF00DE8C04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6F2064E1C33CD5D000595CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6F206551C33CD5D000595CD;
+			remoteInfo = "Our Majors";
+		};
 		B6F2066B1C33CD5D000595CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6F2064E1C33CD5D000595CD /* Project object */;
@@ -89,11 +102,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		059C4C050D5ECA56D4A61839 /* libPods-Our Majors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Our Majors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D376669940278902128870 /* Pods-Our Majors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Our Majors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Our Majors/Pods-Our Majors.debug.xcconfig"; sourceTree = "<group>"; };
+		AADD6E785190C6F320AC785D /* Pods_Our_Majors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Our_Majors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60A173E1C346C1D00A5BB81 /* HealthInfoManagement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HealthInfoManagement.pdf; sourceTree = "<group>"; };
 		B60A17401C346C3700A5BB81 /* AppliedHealthSciences.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AppliedHealthSciences.pdf; sourceTree = "<group>"; };
 		B60AEA381C938B4D00DE8C04 /* PDFPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFPreviewController.swift; path = "View Controllers/PDFPreviewController.swift"; sourceTree = "<group>"; };
+		B60AEA3E1C93D4AF00DE8C04 /* Our MajorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Our MajorsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60AEA401C93D4AF00DE8C04 /* Our_MajorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Our_MajorsUITests.swift; sourceTree = "<group>"; };
+		B60AEA421C93D4AF00DE8C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60AEA481C94072300DE8C04 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = "View Controllers/Test.swift"; sourceTree = "<group>"; };
 		B60C97931C52F72100EEBE0E /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppFactoryWebViewController.swift; path = "View Controllers/AppFactoryWebViewController.swift"; sourceTree = "<group>"; };
 		B62E5F951C33CEF200C4D0D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -105,6 +122,10 @@
 		B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MajorSelectViewController.swift; path = "View Controllers/MajorSelectViewController.swift"; sourceTree = "<group>"; };
 		B62E5FDD1C33CF6D00C4D0D1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Model/Constants.swift; sourceTree = "<group>"; };
 		B62E5FDE1C33CF6D00C4D0D1 /* ParksideMajorColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParksideMajorColors.swift; path = Model/ParksideMajorColors.swift; sourceTree = "<group>"; };
+		B63C9B381D22E1CA00116486 /* ScreensaverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScreensaverController.swift; path = "View Controllers/ScreensaverController.swift"; sourceTree = "<group>"; };
+		B63C9B3A1D2305D200116486 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "View Controllers/BaseViewController.swift"; sourceTree = "<group>"; };
+		B63C9B3C1D2307D500116486 /* TimerUIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerUIApplication.swift; sourceTree = "<group>"; };
+		B63C9B3E1D2307EC00116486 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B661E6931C509C5500397311 /* AnimatingBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatingBanner.swift; path = Views/AnimatingBanner.swift; sourceTree = "<group>"; };
 		B67DAAD11C33D59C008D2E7A /* ParksideMajorNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParksideMajorNames.swift; path = Model/ParksideMajorNames.swift; sourceTree = "<group>"; };
 		B67DAAD31C33DAF3008D2E7A /* Accounting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Accounting.pdf; path = PDFs/Accounting.pdf; sourceTree = "<group>"; };
@@ -163,6 +184,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B60AEA3B1C93D4AF00DE8C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6F206531C33CD5D000595CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,7 +199,7 @@
 				B6F5CBFC1C55F27B003D7748 /* libz.tbd in Frameworks */,
 				B6F5CBFA1C55F26C003D7748 /* SystemConfiguration.framework in Frameworks */,
 				B6F5CBF81C55F25D003D7748 /* CoreData.framework in Frameworks */,
-				68B8B04CD0BA2FC1E897019E /* libPods-Our Majors.a in Frameworks */,
+				2066AAD516CA6B7258733264 /* Pods_Our_Majors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +227,18 @@
 				B6F5CBFB1C55F27B003D7748 /* libz.tbd */,
 				B6F5CBF91C55F26C003D7748 /* SystemConfiguration.framework */,
 				B6F5CBF71C55F25D003D7748 /* CoreData.framework */,
-				059C4C050D5ECA56D4A61839 /* libPods-Our Majors.a */,
+				AADD6E785190C6F320AC785D /* Pods_Our_Majors.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B60AEA3F1C93D4AF00DE8C04 /* Our MajorsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B60AEA401C93D4AF00DE8C04 /* Our_MajorsUITests.swift */,
+				B60AEA421C93D4AF00DE8C04 /* Info.plist */,
+			);
+			path = "Our MajorsUITests";
 			sourceTree = "<group>";
 		};
 		B62E5F971C33CF0E00C4D0D1 /* Views */ = {
@@ -222,6 +259,9 @@
 		B62E5FA21C33CF2E00C4D0D1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B63C9B3A1D2305D200116486 /* BaseViewController.swift */,
+				B63C9B3E1D2307EC00116486 /* main.swift */,
+				B63C9B381D22E1CA00116486 /* ScreensaverController.swift */,
 				B62E5FA41C33CF4200C4D0D1 /* MajorSelectViewController.swift */,
 				B60C97951C54771B00EEBE0E /* AppFactoryWebViewController.swift */,
 				B60C97931C52F72100EEBE0E /* PDFViewController.swift */,
@@ -289,6 +329,7 @@
 				B6F206581C33CD5D000595CD /* ParksideAdmissions */,
 				B6F2066D1C33CD5D000595CD /* ParksideAdmissionsTests */,
 				B6F206781C33CD5D000595CD /* ParksideAdmissionsUITests */,
+				B60AEA3F1C93D4AF00DE8C04 /* Our MajorsUITests */,
 				B6F206571C33CD5D000595CD /* Products */,
 				F381C2D8D0A7B949AED5B772 /* Pods */,
 				AE8583224E7401A6A4670758 /* Frameworks */,
@@ -301,6 +342,7 @@
 				B6F206561C33CD5D000595CD /* Our Majors.app */,
 				B6F2066A1C33CD5D000595CD /* ParksideAdmissionsTests.xctest */,
 				B6F206751C33CD5D000595CD /* ParksideAdmissionsUITests.xctest */,
+				B60AEA3E1C93D4AF00DE8C04 /* Our MajorsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,10 +351,12 @@
 			isa = PBXGroup;
 			children = (
 				B6F206591C33CD5D000595CD /* AppDelegate.swift */,
+				B63C9B3C1D2307D500116486 /* TimerUIApplication.swift */,
 				B6898FBF1C55FD95009A3D85 /* Our-Majors-Bridging-Header.h */,
 				B62E5F971C33CF0E00C4D0D1 /* Views */,
 				B6F206601C33CD5D000595CD /* Assets.xcassets */,
 				B62E5F951C33CEF200C4D0D1 /* Main.storyboard */,
+				B60AEA481C94072300DE8C04 /* Test.swift */,
 				B62E5FA21C33CF2E00C4D0D1 /* View Controllers */,
 				B6F206621C33CD5D000595CD /* LaunchScreen.storyboard */,
 				B6F206651C33CD5D000595CD /* Info.plist */,
@@ -352,6 +396,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B60AEA3D1C93D4AF00DE8C04 /* Our MajorsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60AEA451C93D4AF00DE8C04 /* Build configuration list for PBXNativeTarget "Our MajorsUITests" */;
+			buildPhases = (
+				B60AEA3A1C93D4AF00DE8C04 /* Sources */,
+				B60AEA3B1C93D4AF00DE8C04 /* Frameworks */,
+				B60AEA3C1C93D4AF00DE8C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B60AEA441C93D4AF00DE8C04 /* PBXTargetDependency */,
+			);
+			name = "Our MajorsUITests";
+			productName = "Our MajorsUITests";
+			productReference = B60AEA3E1C93D4AF00DE8C04 /* Our MajorsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B6F206551C33CD5D000595CD /* Our Majors */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F2067E1C33CD5D000595CD /* Build configuration list for PBXNativeTarget "Our Majors" */;
@@ -418,9 +480,13 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "University Of Wisconsin Parkside";
 				TargetAttributes = {
+					B60AEA3D1C93D4AF00DE8C04 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B6F206551C33CD5D000595CD;
+					};
 					B6F206551C33CD5D000595CD = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 2T9JP2ZYVK;
+						DevelopmentTeam = 9463AL9REH;
 					};
 					B6F206691C33CD5D000595CD = {
 						CreatedOnToolsVersion = 7.2;
@@ -448,11 +514,19 @@
 				B6F206551C33CD5D000595CD /* Our Majors */,
 				B6F206691C33CD5D000595CD /* ParksideAdmissionsTests */,
 				B6F206741C33CD5D000595CD /* ParksideAdmissionsUITests */,
+				B60AEA3D1C93D4AF00DE8C04 /* Our MajorsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B60AEA3C1C93D4AF00DE8C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6F206541C33CD5D000595CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -564,6 +638,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B60AEA3A1C93D4AF00DE8C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60AEA411C93D4AF00DE8C04 /* Our_MajorsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6F206521C33CD5D000595CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,9 +654,14 @@
 				B60C97941C52F72100EEBE0E /* PDFViewController.swift in Sources */,
 				B62E5FDF1C33CF6D00C4D0D1 /* Constants.swift in Sources */,
 				B60C97961C54771B00EEBE0E /* AppFactoryWebViewController.swift in Sources */,
+				B63C9B3B1D2305D200116486 /* BaseViewController.swift in Sources */,
+				B60AEA491C94072300DE8C04 /* Test.swift in Sources */,
 				B6A6DF151C51636200195056 /* Nav+StatusBar.swift in Sources */,
 				B60AEA391C938B4D00DE8C04 /* PDFPreviewController.swift in Sources */,
+				B63C9B3F1D2307EC00116486 /* main.swift in Sources */,
+				B63C9B391D22E1CA00116486 /* ScreensaverController.swift in Sources */,
 				B62E5FE01C33CF6D00C4D0D1 /* ParksideMajorColors.swift in Sources */,
+				B63C9B3D1D2307D500116486 /* TimerUIApplication.swift in Sources */,
 				B6F5CC001C55F58A003D7748 /* UIColorExtension.swift in Sources */,
 				B661E6941C509C5500397311 /* AnimatingBanner.swift in Sources */,
 				B62E5F9D1C33CF1A00C4D0D1 /* CardView.swift in Sources */,
@@ -606,6 +693,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B60AEA441C93D4AF00DE8C04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6F206551C33CD5D000595CD /* Our Majors */;
+			targetProxy = B60AEA431C93D4AF00DE8C04 /* PBXContainerItemProxy */;
+		};
 		B6F2066C1C33CD5D000595CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B6F206551C33CD5D000595CD /* Our Majors */;
@@ -630,6 +722,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B60AEA461C93D4AF00DE8C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Our MajorsUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.appfactory.Our-MajorsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Our Majors";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B60AEA471C93D4AF00DE8C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Our MajorsUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.appfactory.Our-MajorsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Our Majors";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		B6F2067C1C33CD5D000595CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -732,7 +850,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParksideAdmissions/Our-Majors-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -755,7 +873,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ParksideAdmissions/Our-Majors-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -810,6 +928,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B60AEA451C93D4AF00DE8C04 /* Build configuration list for PBXNativeTarget "Our MajorsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60AEA461C93D4AF00DE8C04 /* Debug */,
+				B60AEA471C93D4AF00DE8C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6F206511C33CD5D000595CD /* Build configuration list for PBXProject "ParksideAdmissions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

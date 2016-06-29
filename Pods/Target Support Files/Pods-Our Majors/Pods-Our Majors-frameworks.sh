@@ -82,3 +82,24 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Our Majors/Auk.framework"
+  install_framework "Pods-Our Majors/JGMethodSwizzler.framework"
+  install_framework "Pods-Our Majors/JTMaterialTransition.framework"
+  install_framework "Pods-Our Majors/MZAppearance.framework"
+  install_framework "Pods-Our Majors/MZFormSheetPresentationController.framework"
+  install_framework "Pods-Our Majors/Shimmer.framework"
+  install_framework "Pods-Our Majors/UIColor_Hex_Swift.framework"
+  install_framework "Pods-Our Majors/moa.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Our Majors/Auk.framework"
+  install_framework "Pods-Our Majors/JGMethodSwizzler.framework"
+  install_framework "Pods-Our Majors/JTMaterialTransition.framework"
+  install_framework "Pods-Our Majors/MZAppearance.framework"
+  install_framework "Pods-Our Majors/MZFormSheetPresentationController.framework"
+  install_framework "Pods-Our Majors/Shimmer.framework"
+  install_framework "Pods-Our Majors/UIColor_Hex_Swift.framework"
+  install_framework "Pods-Our Majors/moa.framework"
+fi

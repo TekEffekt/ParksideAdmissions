@@ -48,6 +48,16 @@
                ReferencedContainer = "container:ParksideAdmissions.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B60AEA3D1C93D4AF00DE8C04"
+               BuildableName = "Our MajorsUITests.xctest"
+               BlueprintName = "Our MajorsUITests"
+               ReferencedContainer = "container:ParksideAdmissions.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

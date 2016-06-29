@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppFactoryWebViewController: UIViewController {
+class AppFactoryWebViewController: BaseViewController {
 
     @IBOutlet weak var webView: UIWebView!
     var backColor: UIColor?
@@ -29,6 +29,7 @@ class AppFactoryWebViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController!.navigationBar.tintColor = backColor!
         webView.backgroundColor = UIColor.whiteColor()
         

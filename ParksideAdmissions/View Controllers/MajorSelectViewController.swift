@@ -9,23 +9,22 @@
 
 import UIKit
 import SafariServices
+import JTMaterialTransition
+import MZFormSheetPresentationController
 
-class MajorSelectViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate,
-    UIViewControllerTransitioningDelegate, UIGestureRecognizerDelegate
-{
+class MajorSelectViewController: BaseViewController, UICollectionViewDataSource, UICollectionViewDelegate,
+    UIViewControllerTransitioningDelegate, UIGestureRecognizerDelegate {
     // MARK: Properties
     @IBOutlet weak var buttonCollection: UICollectionView!
     var buttonViews:[MKButton] = []
     var transition:JTMaterialTransition?
     var tempButton:MKButton?
-    
     @IBOutlet weak var lineHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var bannerContainer: UIView!
     var banner: AnimatingBanner?
     
     // MARK: Initialization
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -33,16 +32,17 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         self.buttonCollection.dataSource = self
         
         lineHeightConstraint.constant = 0.5
-        
         setupBannerTapGesture()
+        startScreenTracking()
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         self.automaticallyAdjustsScrollViewInsets = false
         
-        setupBannerShadow()
-        
-        startScreenTracking()
+        if bannerContainer.layer.shadowOpacity != 0.2 {
+            setupBannerShadow()
+        }
     }
     
     private func setupBannerShadow() {
@@ -57,8 +57,7 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     override func viewDidAppear(animated: Bool) {
-        if let _ = self.tempButton
-        {
+        if let _ = self.tempButton {
             self.tempButton!.removeFromSuperview()
             self.tempButton = nil
         }
@@ -151,8 +150,8 @@ class MajorSelectViewController: UIViewController, UICollectionViewDataSource, U
         nav.view.backgroundColor = GetColors.getList()[randomColorI]
         pdfController.masterController = self
         pdfController.banner = self.banner
-        print("What")
         self.presentViewController(nav, animated: true, completion: nil)
+        navigationController!.pushViewController(nav, animated: true)
     }
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

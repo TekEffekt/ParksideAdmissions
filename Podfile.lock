@@ -1,24 +1,34 @@
 PODS:
+  - Auk (2.1.5):
+    - moa (~> 3.0)
   - GoogleAnalytics (3.14.0)
   - JGMethodSwizzler (2.0.1)
   - JTMaterialTransition (1.0.5)
+  - moa (3.0.0)
   - MZAppearance (1.1.6)
   - MZFormSheetPresentationController (1.1.3):
     - JGMethodSwizzler
     - MZAppearance
+  - Shimmer (1.0.2)
+  - UIColor_Hex_Swift (1.9)
 
 DEPENDENCIES:
+  - Auk (~> 2.1)
   - GoogleAnalytics
   - JTMaterialTransition
   - MZFormSheetPresentationController (~> 1.1)
+  - Shimmer
+  - UIColor_Hex_Swift (~> 1.8)
 
 SPEC CHECKSUMS:
+  Auk: 25fe0c1ac0d22b387eca4c5ea9de48c9caea5c05
   GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
   JGMethodSwizzler: e0ea5c1c6c55304ec4ef3f54e441400c6735c899
   JTMaterialTransition: 7b2a19927baa47e42312df941cbc5132dc4484ca
+  moa: 32ca142e67accf6124087abba94ff5c288ad1d7e
   MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
   MZFormSheetPresentationController: 420a502aa04c038c0a9ceeb89b34e99cadab40ff
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  UIColor_Hex_Swift: 2ee747c0fed8b72b2135ef474b80a6921e489daa
 
-PODFILE CHECKSUM: 07f0736a7499c03c26a4911c962c3a5207fd5c19
-
-COCOAPODS: 1.0.0.beta.2
+COCOAPODS: 0.39.0

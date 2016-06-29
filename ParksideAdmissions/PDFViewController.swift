@@ -11,7 +11,7 @@ import UIKit
 import QuickLook
 import MessageUI
 
-class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate, UIGestureRecognizerDelegate, UIPrintInteractionControllerDelegate {
+class PDFViewController: BaseViewController, QLPreviewControllerDataSource, QLPreviewControllerDelegate, MFMailComposeViewControllerDelegate, UIGestureRecognizerDelegate, UIPrintInteractionControllerDelegate {
     
     // MARK: Properties
     weak var masterController:MajorSelectViewController?
@@ -23,6 +23,9 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     
     weak var banner: AnimatingBanner?
     @IBOutlet weak var container: UIView!
+    
+    @IBOutlet weak var printItem: UIBarButtonItem!
+    var savedPrinter: UIPrinter?
     
     deinit {
         PDFPreviewController.previewController.view.removeFromSuperview()
@@ -52,6 +55,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController!.navigationBarHidden = true
         
         view.addSubview(banner!)
@@ -121,7 +125,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
             
     // MARK: Navigation
     @IBAction func backButtonPressed(sender: UIBarButtonItem) {
-       dismissViewControllerAnimated(true) { () -> Void in
+       masterController!.dismissViewControllerAnimated(true) { () -> Void in
             self.banner!.removeFromSuperview()
             self.masterController!.removeTemp()
             self.masterController!.view.addSubview(self.banner!)
@@ -174,10 +178,30 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
     
     // MARK: Printing
     @IBAction func printButtonPressed(sender: AnyObject) {
+        selectPrinter()
+    }
+    
+    private func print() {
         let printController = UIPrintInteractionController.sharedPrintController()
         printController.delegate = self
-        let pdfPath = MajorsNames.NAMES[PDFPreviewController.previewController.currentPreviewItemIndex]
         
+        loadInPDF(printController)
+        
+        printController.printToPrinter(self.savedPrinter!, completionHandler: nil)
+    }
+    
+    private func selectPrinter() {
+        let printerPicker = UIPrinterPickerController(initiallySelectedPrinter: savedPrinter)
+        printerPicker.presentFromBarButtonItem(printItem, animated: true) { (printerPicker, userDidSelect, error) -> Void in
+            if userDidSelect {
+                self.savedPrinter = printerPicker.selectedPrinter
+                self.print()
+            }
+        }
+    }
+    
+    private func loadInPDF(printController: UIPrintInteractionController) {
+        let pdfPath = MajorsNames.NAMES[PDFPreviewController.previewController.currentPreviewItemIndex]
         let path = NSBundle.mainBundle().pathForResource(pdfPath, ofType: "pdf")
         let data = NSData.dataWithContentsOfMappedFile(path!) as! NSData
         
@@ -187,11 +211,7 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
             printInfo.jobName = "\(pdfPath)  PDF"
             printInfo.duplex = .LongEdge
             printController.printInfo = printInfo
-            
-            printController.showsPageRange = true
             printController.printingItem = data
-            
-            printController.presentAnimated(true, completionHandler: nil)
         }
     }
     
@@ -199,6 +219,11 @@ class PDFViewController: UIViewController, QLPreviewControllerDataSource, QLPrev
         let tracker = GAI.sharedInstance().defaultTracker
         
         tracker.send(GAIDictionaryBuilder.createEventWithCategory("Print", action: "\(MajorsNames.NAMES[PDFPreviewController.previewController.currentPreviewItemIndex])", label:"" , value: nil).build() as [NSObject : AnyObject])
+    }
+    
+    func printInteractionControllerDidFinishJob(printInteractionController: UIPrintInteractionController) {
+        printInteractionController.printingItem = nil
+        printInteractionController.printInfo = nil
     }
     
 }
